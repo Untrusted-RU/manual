@@ -1,0 +1,36 @@
+{% extends "section.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+{{ super() }}
+{% for class in section.pages %}
+<div style="height:50px;clear:both;"></div>
+<a name="{{ class.extra.id }}"></a>
+<hr />
+<div class="indent-first-p" style="float:left;width:60%;">
+    <h1 style="text-align:center;">{{ class.title }}</h1>
+    <img src='https://www.playuntrusted.com/classicons/{{ class.extra.icon_id }}.png'
+        style='width:128px;height:128px;float:left;' alt='Runaway Snitch' />
+    <div style="text-align: justify;">
+        {{ class.content | safe }}
+        {% if class.extra.unique %}
+        <p>Этот класс уникален - только один игрок в каждой игре может иметь эту роль.</p>
+        {% endif %}
+        {% if class.extra.guaranteed %}
+        <p>Этот класс гарантированно участвует в каждой игре.</p>
+        {% endif %}
+        {% set faction_path = "factions/" ~ class.extra.faction ~ ".md" | lower %}
+        {% set faction = get_page(path=faction_path) %}
+        <p><b>Фракция:</b> <a href="/factions/#{{ faction.extra.id }}">{{ faction.title }}</a></p>
+        <p>
+            <b>Условия победы:</b>
+            {% if class.extra.win_condition %}
+            {{ class.extra.win_condition }}
+            {% else %}
+            {{ faction.extra.win_condition }}
+            {% endif %}
+        </p>
+    </div>
+</div>
+{% endfor %}
+{% endblock content %}

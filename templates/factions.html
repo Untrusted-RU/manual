@@ -1,0 +1,30 @@
+{% extends "section.html" %}
+
+{% block content %}
+{{ super() }}
+{% for faction in section.pages %}
+<hr />
+<p><a name="{{ faction.extra.id }}"></a></p>
+<h1 style="text-align:right;vertical-align: middle;">
+    {{ faction.title }}
+    <img style="width: 64px; height: 64px;"
+        src="https://i0.wp.com/www.playuntrusted.com/wp-content/uploads/2020/02/{{ faction.extra.image }}.png?w=924&amp;ssl=1"
+        alt="" data-recalc-dims="1" />
+</h1>
+<div style="float: left; width: 60%;">
+    {{ faction.content | safe }}
+</div>
+<div class="float: right;">
+    <div class="text-alight: right;">
+        <b>Играбельные классы:</b>
+        {% for class_id in faction.extra.members %}
+        {% set class_page_path = "classes/" ~ class_id ~ ".md" | lower %}
+        {% set class = get_page(path=class_page_path) %}
+        <br>
+        <a href="/classes/#{{class.extra.id}}">{{ class.title }} «</a>
+        {% endfor %}
+    </div>
+</div>
+<div style="height:35px;clear:both;"></div>
+{% endfor %}
+{% endblock content %}

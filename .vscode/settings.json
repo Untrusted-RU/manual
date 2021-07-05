@@ -1,0 +1,9 @@
+{
+    "[markdown]": {
+        "editor.formatOnSave": false,
+        "editor.wordWrap": "on"
+    },
+    "files.associations": {
+        "**/*.md": "jinja-md"
+    }
+}
