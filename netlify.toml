@@ -1,3 +1,5 @@
+ZOLA_VERSION = "0.13.0"
+
 [build]
 command = "zola build"
 functions = "netlify/functions"
