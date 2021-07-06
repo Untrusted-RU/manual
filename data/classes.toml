@@ -20,6 +20,29 @@ description = """\
 но ваши партнеры рассчитывают на ваши аналитические навыки.\
 """
 
+[NETSEC_BLACKHAT]
+title = "Черношляпник"
+icon_id = 4
+unique = false
+guaranteed = false
+faction = "NETSEC"
+type = "Нападающий"
+hack_chance = "очень высокий"
+skills = [
+    "HACK_NODE",
+    "STANDARDEXPLOIT",
+    "DENIAL_OF_SERVICE",
+    "MEET_DISCUSS",
+    "NOT_A_SNITCH",
+]
+description = """\
+Вы не просто хороши во взломе компьютеров - \
+вы также отлично умеете нарушать планы других людей. \
+Ваша основная задача - взлом узлов, но, тем не менее, \
+Лидер операции может поручить вам использовать свои навыки, \
+чтобы замедлить расследование правоохранительных органов.\
+"""
+
 [NETSEC_CCTV_SPECIALIST]
 title = "СОВН-специалист"
 icon_id = 2

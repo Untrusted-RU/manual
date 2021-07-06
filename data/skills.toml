@@ -66,6 +66,21 @@ description = """\
 (Добавляет одно применение навыку 'Сменить укрытие')\
 """
 
+[DENIAL_OF_SERVICE]
+title = "Отказ от обслуживания"
+icon_id = 35
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 2
+rng = false
+targeted_at = "сетевой узел"
+description = """\
+Временно отключить узел путём перегрузки его сетевым трафиком \
+(Не может быть прервано никаким другим навыком.)\
+"""
+
 [DESPERATE_MEASURES]
 title = "Крайние меры"
 icon_id = 64
@@ -416,6 +431,21 @@ description = """\
 (Перенаправить действия с себя на целевого игрока)\
 """
 
+[STANDARDEXPLOIT]
+title = "Возпользоваться уязвимостью"
+icon_id = 11
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 2
+rng = true
+targeted_at = "сетевой узел"
+description = """\
+Использовать эксплойт на выбранном узле \
+(Сильно упрощает взлом узла).\
+"""
+
 [TARGET_KNOWLEDGE]
 title = "Знание целевого узла"
 icon_id = 66
@@ -427,7 +457,7 @@ description = """\
 """
 
 [WIRESHARK]
-title = "Сниффить траффик"
+title = "Сниффить трафик"
 icon_id = 8
 time = "Дневной"
 cooldown = 3
@@ -436,7 +466,7 @@ occupies = false
 maximum_uses = 3
 rng = false
 description = """\
-Сниффить весь сетевой траффик, что позволит узнать, \
+Сниффить весь сетевой трафик, что позволит узнать, \
 кто совершает атаку 'Отказ от обслуживания'.\
 """
 
