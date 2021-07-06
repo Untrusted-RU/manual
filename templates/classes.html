@@ -26,8 +26,8 @@
         <p><b>Фракция:</b> <a href="/factions/#{{ faction.extra.id }}">{{ faction.title }}</a></p>
         <p>
             <b>Условия победы:</b>
-            {% if class.extra.win_condition %}
-            {{ class.extra.win_condition }}
+            {% if class.win_condition %}
+            {{ class.win_condition }}
             {% else %}
             {{ faction.extra.win_condition }}
             {% endif %}
