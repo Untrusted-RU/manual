@@ -1,3 +1,18 @@
+[ADD_ROUTE]
+title = "Добавить соединение"
+icon_id = 63
+time = "Ночной"
+cooldown = 2
+visits = false
+occupies = false
+maximum_uses = 2
+rng = false
+targeted_at = "сетевой узел"
+description = """\
+Подключить выбранный узел к случайному соседнему узлу, \
+если есть возможность. (Не оставляет логов)\
+"""
+
 [AGENT_SCUM]
 title = "Крыса из AGENT"
 icon_id = 84
@@ -799,6 +814,17 @@ description = """\
 ОЧЕНЬ мало шансов на успех.\
 """
 
+[SEARCH_FOR_KEYLOGGERS]
+title = "Искать кейлоггеры"
+icon_id = 46
+time = "Ночной"
+cooldown = 2
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+description = "Найти и уничтожить кейлоггеры в целевом здании."
+
 [SELF_PRESERVATION]
 title = "Сделать козлом отпущения"
 icon_id = 31
@@ -812,6 +838,21 @@ targeted_at = "игрока"
 description = """\
 Вам что-то не по себе: пусть лучше кто-то другой отхватит за вас. \
 (Перенаправить действия с себя на целевого игрока)\
+"""
+
+[SETUP]
+title = "Заманить"
+icon_id = 47
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 2
+rng = false
+targeted_at = "игрока"
+description = """\
+Обманом заставить цель посетить кого-то другого этой ночью \
+(ваша цель будет занята)\
 """
 
 [SOCIOPATH_MURDER]

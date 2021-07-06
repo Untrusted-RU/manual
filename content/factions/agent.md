@@ -14,6 +14,9 @@ win_condition = """\
 members = [
     "AGENT_LEADER",
     "AGENT_FIELD",
+    "AGENT_CONVERTED_FIELDOPS",
+    "AGENT_CONVERTED_INVESTIGATIVE",
+    "AGENT_CONVERTED_OFFENSIVE",
 ]
 +++
 

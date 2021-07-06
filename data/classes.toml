@@ -45,6 +45,80 @@ description = """\
 чтобы виновных привлекли к ответственности.\
 """
 
+[AGENT_CONVERTED_FIELDOPS]
+title = "Крот (Оперативник)"
+icon_id = 17
+unique = false
+guaranteed = false
+faction = "AGENT"
+type = "Оперативник"
+skills = [
+    "PLANT_FAKE_INFORMATION",
+    "JAM_NETWORK",
+    "SEARCH_FOR_KEYLOGGERS",
+    "WIRETAP",
+    "ADD_ROUTE",
+    "TOPOLOGY_KNOWLEDGE",
+]
+description = """\
+Вы были частью команды NETSEC, \
+пока органы не постучали вам в дверь. \
+Вы согласились на сделку и теперь, чтобы избежать тюрьмы, \
+вы должны уничтожить ту организацию, \
+в которую раньше вы твёрдо верили. \
+Вы поможете расследованию вашими навыками полевой работы.\
+"""
+
+[AGENT_CONVERTED_INVESTIGATIVE]
+title = "Крот (Исследователь)"
+icon_id = 18
+unique = false
+guaranteed = false
+faction = "AGENT"
+type = "Исследователь"
+skills = [
+    "ALTER_LOGS",
+    "IMPERSONATE",
+    "FOLLOW",
+    "FRAME",
+    "SETUP",
+    "TOPOLOGY_KNOWLEDGE",
+]
+description = """\
+Вы были частью команды NETSEC, \
+пока органы не постучали вам в дверь. \
+Вы согласились на сделку и теперь, чтобы избежать тюрьмы, \
+вы должны уничтожить ту организацию, \
+в которую раньше вы твёрдо верили. \
+Вы поможете расследованию вашими навыками \
+расследований, связанных с безопасностью, \
+изнутри самой NETSEC.\
+"""
+
+[AGENT_CONVERTED_OFFENSIVE]
+title = "Крот (Нападающий)"
+icon_id = 19
+unique = false
+guaranteed = false
+faction = "AGENT"
+type = "Нападающий"
+skills = [
+    "ROLLBACK",
+    "HARDEN",
+    "MEET_DISCUSS",
+    "WIPE",
+    "TOPOLOGY_KNOWLEDGE",
+]
+description = """\
+Вы были частью команды NETSEC, \
+пока органы не постучали вам в дверь. \
+Вы согласились на сделку и теперь, чтобы избежать тюрьмы, \
+вы должны уничтожить ту организацию, \
+в которую раньше вы твёрдо верили. \
+Вы поможете расследованию вашими навыками \
+взлома сетей, изнутри самой NETSEC.\
+"""
+
 [NETSEC_ANALYST]
 title = "Аналитик"
 icon_id = 9
