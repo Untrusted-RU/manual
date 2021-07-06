@@ -431,6 +431,37 @@ description = """\
 (Перенаправить действия с себя на целевого игрока)\
 """
 
+[SPEARPHISH_EXECUTION]
+title = "Совершить фишинг-атаку"
+icon_id = 30
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+targeted_at = "сетевой узел"
+description = """\
+Сфабриковать почтовый адрес и отправить ссылку на ваш сайт \
+потенциальным жертвам, обманом получая их учётные данные \
+(упрощает взлом выбранного узла)\
+"""
+
+[SPEARPHISH_PREPARATION]
+title = "Подготовить фишинг-атаку"
+icon_id = 29
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 1
+rng = false
+description = """\
+Аккуратно создать сайт-ловушку. \
+Позже вы используете его для кражи учётных данных. \
+(Даёт 1 применение навыку 'Совершить фишинг-атаку')\
+"""
+
 [STANDARDEXPLOIT]
 title = "Возпользоваться уязвимостью"
 icon_id = 11
