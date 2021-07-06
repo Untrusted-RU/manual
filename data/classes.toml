@@ -5,6 +5,7 @@ unique = false
 guaranteed = false
 faction = "NETSEC"
 type = "Исследователь"
+hack_chance = "низкий"
 skills = [
     "HACK_NODE",
     "LOG_ANALYSIS",
@@ -62,27 +63,6 @@ description = """\
 если это обеспечит безопасность ваших партнеров хотя бы ненадолго.\
 """
 
-[NETSEC_OPLEADER]
-title = "Лидер операции"
-icon_id = 1
-unique = true
-guaranteed = true
-faction = "NETSEC"
-type = "Особый"
-skills = [
-    "HACK_NODE",
-    "ZERODAY_EXPLOIT",
-    "GRANT_ROOT",
-    "EMERGENCY_EXTRACTION",
-    "MOVE_HIDEOUT",
-    "NOT_A_SNITCH",
-    "BROADCAST",
-]
-description = """\
-Вы являетесь лидером операции NETSEC - ваша роль заключается в координации атак и ликвидации потенциальных угроз для вашей операции. \
-Хотя у вас есть навыки взлома, вам нужно сосредоточиться на других вопросах для успеха всей операции. Не попадитесь.\
-"""
-
 [NETSEC_INSIDEMAN]
 skills = [
     "KEYLOGGER_PLANT",
@@ -104,4 +84,26 @@ description = """\
 Вы просто рядовой сотрудник, не боящийся испачкать руки за деньги. \
 Вы не совсем понимаете, почему группа NETSEC нацелилась на вашего работодателя, но вам нет до этого дела. \
 Вам просто мало платят.\
+"""
+
+[NETSEC_OPLEADER]
+title = "Лидер операции"
+icon_id = 1
+unique = true
+guaranteed = true
+faction = "NETSEC"
+type = "Особый"
+hack_chance = "высокий"
+skills = [
+    "HACK_NODE",
+    "ZERODAY_EXPLOIT",
+    "GRANT_ROOT",
+    "EMERGENCY_EXTRACTION",
+    "MOVE_HIDEOUT",
+    "NOT_A_SNITCH",
+    "BROADCAST",
+]
+description = """\
+Вы являетесь лидером операции NETSEC - ваша роль заключается в координации атак и ликвидации потенциальных угроз для вашей операции. \
+Хотя у вас есть навыки взлома, вам нужно сосредоточиться на других вопросах для успеха всей операции. Не попадитесь.\
 """

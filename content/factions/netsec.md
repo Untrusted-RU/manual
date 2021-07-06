@@ -6,11 +6,11 @@ weight = 0
 id = "NETSEC"
 image = "1_faction_netsec"
 win_condition = """\
-Взломать Целевой Узел. \
+Взломать целевой узел. \
 Если у нас получится, даже если нас арестуют - мы точно выберемся из тюрьмы, \
 учитывая, кто наш клиент...\
 """
-members = ["NETSEC_OPLEADER", "NETSEC_CCTV_SPECIALIST", "NETSEC_ENFORCER"]
+members = ["NETSEC_OPLEADER", "NETSEC_CCTV_SPECIALIST", "NETSEC_ENFORCER", "NETSEC_ANALYST"]
 +++
 
 **NETSEC** - команда хакеров, собранная неизвестным гением.

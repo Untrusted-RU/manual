@@ -24,6 +24,9 @@
         {% set faction_path = "factions/" ~ class.faction ~ ".md" | lower %}
         {% set faction = get_page(path=faction_path) %}
         <p><b>Фракция:</b> <a href="/factions/#{{ faction.extra.id }}">{{ faction.title }}</a></p>
+        {% if class.hack_chance %}
+        <p><b>Шанс взлома узла:</b> {{ class.hack_chance }}</p>
+        {% endif %}
         <p>
             <b>Условия победы:</b>
             {% if class.win_condition %}
