@@ -5,8 +5,12 @@ weight = 0
 [extra]
 id = "NETSEC"
 image = "1_faction_netsec"
-win_condition = "Hack the target computer. If we succeed, even if we are arrested we are guaranteed to get out of jail, given who our client is..."
-members = ["NETSEC_OPLEADER"]
+win_condition = """\
+Взломать Целевой Узел. \
+Если у нас получится, даже если нас арестуют - мы точно выберемся из тюрьмы, \
+учитывая, кто наш клиент...\
+"""
+members = ["NETSEC_OPLEADER", "NETSEC_CCTV_SPECIALIST", "NETSEC_ENFORCER"]
 +++
 
 **NETSEC** - команда хакеров, собранная неизвестным гением.

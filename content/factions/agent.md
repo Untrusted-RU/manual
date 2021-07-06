@@ -5,7 +5,10 @@ weight = 1
 [extra]
 id = "AGENT"
 image = "3_faction_agent"
-win_condition = "Prevent NETSEC from hacking the target machine and arrest their original leader, or gain root privileges from their Operation Leader, or arrest every NETSEC operative."
+win_condition = """\
+Помешать NETSEC
+Prevent NETSEC from hacking the target machine and arrest their original leader, or gain root privileges from their Operation Leader, or arrest every NETSEC operative."
+"""
 members = []
 +++
 
