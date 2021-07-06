@@ -13,6 +13,7 @@ win_condition = """\
 """
 members = [
     "AGENT_LEADER",
+    "AGENT_FIELD",
 ]
 +++
 

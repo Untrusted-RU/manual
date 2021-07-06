@@ -25,6 +25,37 @@ description = """\
 Оперативник AGENT вне игры)\
 """
 
+[ALTER_LOGS]
+title = "Изменить логи"
+icon_id = 7
+time = "Дневной"
+cooldown = 2
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+description = """\
+Физически получить доступ и изменить логи на данном узле. \
+(Неуязвимо к 'Отказу от обслуживания')\
+"""
+
+[ARREST]
+title = "Арестовать"
+icon_id = 14
+time = "Ночной"
+cooldown = 0
+visits = true
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+targeted_at = "игрока"
+description = """\
+Попытаться арестовать цель. \
+Вы не будете раскрыты в случае неудачи, \
+так как будете управлять операцией из фургона \
+(кроме как наглыми журналистами).\
+"""
+
 [ASK_THE_RIGHT_QUESTION]
 title = "Задать нужный вопрос"
 icon_id = 58
@@ -493,6 +524,22 @@ description = """\
 (Понижает сложность взлома узла)\
 """
 
+[ISP_ISOLATION]
+title = "Изоляция от провайдера"
+icon_id = 55
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 3
+rng = false
+targeted_at = "игрока"
+description = """\
+Использовать ордер, чтобы заставить провайдера \
+отключить выбранного участника от интернета на сегодня. \
+(Предотвращает сетевые подключения)\
+"""
+
 [JAM_NETWORK]
 title = "Заглушить сеть"
 icon_id = 79
@@ -662,6 +709,23 @@ description = """\
 Наблюдать за человеком ночью. \
 Вы будете знать, если его посетят этой ночью \
 (сначала необходимо установить СОВН)\
+"""
+
+[PLANNED_RAID]
+title = "Запланировать рейд"
+icon_id = 78
+time = "Ночной"
+cooldown = 0
+visits = true
+occupies = true
+maximum_uses = 3
+rng = false
+targeted_at = "игрока"
+description = """\
+Сыграть роль силовика NETSEC и сопроводить цель \
+в 'убежище', контролируемое AGENT - \
+цель будет арестована местной полицией через 24 часа, \
+не подставив вас под удар.\
 """
 
 [PLANT_FAKE_INFORMATION]
@@ -839,6 +903,21 @@ rng = true
 description = """\
 Найти полезные данные в штабе AGENT для вашего работодателя. \
 Как найдёте - загрузите их, и считайте ваш контракт выполненным.\
+"""
+
+[STING]
+title = "Облава"
+icon_id = 41
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 1
+rng = false
+targeted_at = "игрока"
+description = """\
+Устроить облаву - одноразовое мероприятие. \
+Цель и все, кто навестят их этой ночью, будут арестованы.\
 """
 
 [STRIKE_DEAL]
