@@ -115,6 +115,22 @@ description = """\
 либо получим важную информацию о нашей команде.\
 """
 
+[DOXX]
+title = "Доксить и сталкерить"
+icon_id = 23
+time = "Ночной"
+cooldown = 4
+visits = true
+occupies = false
+maximum_uses = 2
+rng = false
+targeted_at = "игрока"
+description = """\
+Доксить и сталкерить цель, \
+чтобы узнать важную информацию о них \
+(Узнать фракцию целевого игрока)\
+"""
+
 [DUMPSTER_DIVE]
 title = "Копаться в мусоре"
 icon_id = 28
@@ -195,6 +211,22 @@ rng = true
 description = """\
 Попытаться взломать узел (направлен на узел, оставляет лог). \
 Чем больше людей взламывает один узел, тем выше шанс взлома.\
+"""
+
+[IMPERSONATE]
+title = "Сфабриковать личность"
+icon_id = 24
+time = "Дневной"
+cooldown = 2
+visits = false
+occupies = false
+maximum_uses = 2
+rng = false
+targeted_at = "игрока"
+description = """\
+Сфабриковать личность цели, \
+чтобы отправлять все имейлы этой ночью от их имени. \
+(Отправка имейлов, где цель будет отправителем)\
 """
 
 [INSTALL_CCTV_SURVEILLANCE]
@@ -312,6 +344,17 @@ description = """\
 (Занимает и посещает цель)\
 """
 
+[MISDIRECTION]
+title = "Ввести в заблуждение"
+icon_id = 25
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = true
+maximum_uses = 2
+rng = false
+description = "Занять всех, кто посетит вас этой ночью."
+
 [MOVE_HIDEOUT]
 title = "Сменить укрытие"
 icon_id = 5
@@ -356,6 +399,21 @@ description = """\
 Проверить сегодняшние логи подключений, \
 чтобы узнать, было ли соединение цели с Интернетом \
 оборвано или затронуто.\
+"""
+
+[SELF_PRESERVATION]
+title = "Сделать козлом отпущения"
+icon_id = 31
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 2
+rng = false
+targeted_at = "игрока"
+description = """\
+Вам что-то не по себе: пусть лучше кто-то другой отхватит за вас. \
+(Перенаправить действия с себя на целевого игрока)\
 """
 
 [TARGET_KNOWLEDGE]
