@@ -64,6 +64,12 @@ description = """\
 """
 
 [NETSEC_INSIDEMAN]
+title = "Свой человек"
+icon_id = 6
+unique = false
+guaranteed = false
+faction = "NETSEC"
+type = "Оперативник"
 skills = [
     "KEYLOGGER_PLANT",
     "INSIDERKNOWLEDGE",
@@ -73,17 +79,33 @@ skills = [
     "DUMPSTER_DIVE",
     "TARGET_KNOWLEDGE",
 ]
-title = "Свой человек"
-icon_id = 6
-unique = false
-guaranteed = false
-faction = "NETSEC"
-type = "Оперативник"
 description = """\
 У вас нет высокого уровня доступа в целевой организации, но ведь это лучше, чем никакого доступа, верно? \
 Вы просто рядовой сотрудник, не боящийся испачкать руки за деньги. \
 Вы не совсем понимаете, почему группа NETSEC нацелилась на вашего работодателя, но вам нет до этого дела. \
 Вам просто мало платят.\
+"""
+
+[NETSEC_NETWORK_SPECIALIST]
+title = "Сетевой специалист"
+icon_id = 3
+unique = false
+guaranteed = false
+faction = "NETSEC"
+type = "Исследователь"
+hack_chance = "средний"
+skills = [
+    "HACK_NODE",
+    "WIRESHARK",
+    "INVESTIGATE_NODE",
+    "COVER_TRACKS",
+    "REVIEW_CONNECTION_LOGS",
+]
+description = """\
+Хоть у вас и есть несколько трюков в рукаве для взлома компьютеров, \
+благодаря своим глубоким знаниям в сетевых протоколах и инфраструктуре вы можете быть гораздо полезнее. \
+Конечно, вы можете быть в команде хакеров, но ваши навыки наиболее ценны для исследования собственных товарищей: \
+выяснить, кто лжёт, как можно ранее может быть разницей между тюрьмой и свободой.\
 """
 
 [NETSEC_OPLEADER]

@@ -10,7 +10,13 @@ win_condition = """\
 Если у нас получится, даже если нас арестуют - мы точно выберемся из тюрьмы, \
 учитывая, кто наш клиент...\
 """
-members = ["NETSEC_OPLEADER", "NETSEC_CCTV_SPECIALIST", "NETSEC_ENFORCER", "NETSEC_ANALYST"]
+members = [
+    "NETSEC_OPLEADER",
+    "NETSEC_CCTV_SPECIALIST",
+    "NETSEC_NETWORK_SPECIALIST",
+    "NETSEC_ENFORCER",
+    "NETSEC_ANALYST",
+]
 +++
 
 **NETSEC** - команда хакеров, собранная неизвестным гением.

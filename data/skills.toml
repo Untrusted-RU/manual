@@ -32,7 +32,24 @@ description = """\
 title = "Анонимное вещание"
 icon_id = 67
 time = "Пассивный"
-description = "У вас есть рут-права на всю операцию NETSEC: вы можете отправлять всем анонимные оповещения."
+description = """\
+У вас есть рут-права на всю операцию NETSEC: \
+вы можете отправлять всем анонимные оповещения.\
+"""
+
+[COVER_TRACKS]
+title = "Замести следы"
+icon_id = 9
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 2
+rng = true
+description = """\
+Если вас не найти, то и не арестовать, верно? \
+Вы особо осторожны этой ночью, что сильно повышает ваш шанс избежать ареста этой ночью.\
+"""
 
 [CREATE_HIDEOUT]
 title = "Создать укрытие"
@@ -58,7 +75,10 @@ visits = false
 occupies = false
 maximum_uses = 1
 rng = false
-description = "Тяжёлые времена требуют крайних мер. Стать Хакером-самоучкой (доступно с Дня 4)."
+description = """\
+Тяжёлые времена требуют крайних мер. \
+Стать Хакером-самоучкой (доступно с Дня 4).\
+"""
 
 [DISORGANIZED_MURDER]
 title = "Беспорядочное убийство"
@@ -214,9 +234,24 @@ maximum_uses = 3
 rng = false
 targeted_at = "игрока"
 description = """\
-Встретиться с целью и... поговорить.
-Завтра вы сможете прочитать их персональный лог
-(по состоянию на эту ночь)
+Встретиться с целью и... поговорить. \
+Завтра вы сможете прочитать их персональный лог \
+(по состоянию на эту ночь)\
+"""
+
+[INVESTIGATE_NODE]
+title = "Исследовать узел"
+icon_id = 21
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+targeted_at = "сетевой узел"
+description = """\
+Исследовать возможные способы взлома данного узла. \
+(Понижает сложность взлома узла)\
 """
 
 [KEYLOGGER_PLANT]
@@ -273,7 +308,6 @@ maximum_uses = "неограничено"
 rng = false
 targeted_at = "игрока"
 description = """\
-Meet with a target player tonight to discuss important matters. (Occupies player, visits the target)
 Встретиться с целью этой ночью для обсуждения важных планов. \
 (Занимает и посещает цель)\
 """
@@ -308,14 +342,44 @@ description = """\
 (сначала необходимо установить СОВН)\
 """
 
+[REVIEW_CONNECTION_LOGS]
+title = "Проверить логи подключений"
+icon_id = 74
+time = "Ночной"
+cooldown = 3
+visits = false
+occupies = false
+maximum_uses = 2
+rng = false
+targeted_at = "игрока"
+description = """\
+Проверить сегодняшние логи подключений, \
+чтобы узнать, было ли соединение цели с Интернетом \
+оборвано или затронуто.\
+"""
+
 [TARGET_KNOWLEDGE]
-title = "Наблюдать за камерами"
+title = "Знание целевого узла"
 icon_id = 66
 time = "Пассивный"
 description = """\
 Вы можете собрать воедино кусочки информации, подслушанные в офисе - \
 если NETSEC имеет доступ к узлу, напрямому соединённому с целевым узлом, \
 вы об этом узнаете.\
+"""
+
+[WIRESHARK]
+title = "Сниффить траффик"
+icon_id = 8
+time = "Дневной"
+cooldown = 3
+visits = false
+occupies = false
+maximum_uses = 3
+rng = false
+description = """\
+Сниффить весь сетевой траффик, что позволит узнать, \
+кто совершает атаку 'Отказ от обслуживания'.\
 """
 
 [ZERODAY_EXPLOIT]
