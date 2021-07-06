@@ -1,74 +1,17 @@
-[HACK_NODE]
-title = "Взломать цель"
-icon_id = 1
+[BAIT_LAW_ENFORCEMENT]
+title = "Ложный вызов"
+icon_id = 50
 time = "Дневной"
-cooldown = 0
-visits = false
-occupies = false
-maximum_uses = "неограничено"
-rng = true
-description = """\
-Попытаться взломать узел (направлен на узел, оставляет лог). \
-Чем больше людей взламывает один узел, тем выше шанс взлома.\
-"""
-
-[ZERODAY_EXPLOIT]
-title = "Эксплойт 0-го дня"
-icon_id = 4
-time = "Дневной"
-cooldown = 0
-visits = false
-occupies = false
-maximum_uses = 1
-rng = false
-description = """\
-Вы хранили этот эксплойт 0-го дня для особого случая. \
-Вероятно, случай наступил. Не упустите эту возможность. \
-(100% шанс взломать узел)\
-"""
-
-[GRANT_ROOT]
-title = "Дать рут-права"
-icon_id = 6
-time = "Дневной"
-cooldown = 0
-visits = true
-occupies = false
-maximum_uses = 1
-rng = false
-description = """\
-Дать рут-права на всю операцию определённому игроку. \
-Если вы умрёте или будете арестованы, этот игрок станет новым Лидером операции.\
-"""
-
-[EMERGENCY_EXTRACTION]
-title = "Экстренная эвакуация"
-icon_id = 2
-time = "Ночной"
 cooldown = 2
 visits = false
 occupies = false
 maximum_uses = 3
 rng = false
 targeted_at = "игрока"
-description = "Отправить команду наёмников для перемещения участника в безопасное место."
-
-[MOVE_HIDEOUT]
-title = "Сменить укрытие"
-icon_id = 5
-time = "Ночной"
-cooldown = 0
-visits = false
-occupies = false
-maximum_uses = 1
-rng = false
-description = "Move to a safer hideout, making you safe from arrest, murder and deals attempts."
-
-[NOT_A_SNITCH]
-title = "Не стукач"
-icon_id = 49
-time = "Пассивный"
-description = "Вы никогда не согласитесь на сделку - лучше сесть в тюрьму."
+description = """\
+Отправить анонимное сообщение AGENT о том, что ваша цель - член NETSEC. \
+Лучше бы они решили, что это был охотник за головами...\
+"""
 
 [BROADCAST]
 title = "Анонимное вещание"
@@ -91,21 +34,6 @@ description = """\
 (Добавляет одно применение навыку 'Сменить укрытие')\
 """
 
-[BAIT_LAW_ENFORCEMENT]
-title = "Ложный вызов"
-icon_id = 50
-time = "Дневной"
-cooldown = 2
-visits = false
-occupies = false
-maximum_uses = 3
-rng = false
-targeted_at = "игрока"
-description = """\
-Отправить анонимное сообщение AGENT о том, что ваша цель - член NETSEC. \
-Лучше бы они решили, что это был охотник за головами...\
-"""
-
 [DESPERATE_MEASURES]
 title = "Крайние меры"
 icon_id = 64
@@ -116,6 +44,106 @@ occupies = false
 maximum_uses = 1
 rng = false
 description = "Тяжёлые времена требуют крайних мер. Стать Хакером-самоучкой (доступно с Дня 4)."
+
+[DISORGANIZED_MURDER]
+title = "Беспорядочное убийство"
+icon_id = 71
+time = "Ночной"
+cooldown = 0
+visits = true
+occupies = false
+maximum_uses = "неограничено"
+rng = true
+targeted_at = "игрока"
+description = "Попытаться убить цель. Будет грязно. (Доступно с Ночи 4)"
+
+[DIVERSION]
+title = "Диверсия"
+icon_id = 59
+time = "Пассивный"
+description = "Когда вы сопровождаете кого-то, вместо вашей цели арестуют вас."
+
+[DUMPSTER_DIVE]
+title = "Копаться в мусоре"
+icon_id = 28
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+description = """\
+Проверить мусорники на наличие важной информации. \
+(Снижает сложность случайного узла при успехе)\
+"""
+
+[EMERGENCY_EXTRACTION]
+title = "Экстренная эвакуация"
+icon_id = 2
+time = "Ночной"
+cooldown = 2
+visits = false
+occupies = false
+maximum_uses = 3
+rng = false
+targeted_at = "игрока"
+description = "Отправить команду наёмников для перемещения участника в безопасное место."
+
+[ESCORT]
+title = "Сопроводить"
+icon_id = 61
+time = "Ночной"
+cooldown = 0
+visits = true
+occupies = true
+maximum_uses = "неограничено"
+rng = false
+targeted_at = "игрока"
+description = """\
+Сопроводить цель в новое укрытие, \
+охраняя их от попыток ареста и убийства. \
+Retaliate from murder attempts. (?)\
+"""
+
+[FOLLOW]
+title = "Следить"
+icon_id = 20
+time = "Дневной"
+cooldown = 0
+visits = true
+occupies = false
+maximum_uses = 2
+rng = false
+targeted_at = "игрока"
+description = "Проследовать за целью и узнать, кого они посетят этой ночью."
+
+[GRANT_ROOT]
+title = "Дать рут-права"
+icon_id = 6
+time = "Дневной"
+cooldown = 0
+visits = true
+occupies = false
+maximum_uses = 1
+rng = false
+description = """\
+Дать рут-права на всю операцию определённому игроку. \
+Если вы умрёте или будете арестованы, этот игрок станет новым Лидером операции.\
+"""
+
+[HACK_NODE]
+title = "Взломать цель"
+icon_id = 1
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = true
+description = """\
+Попытаться взломать узел (направлен на узел, оставляет лог). \
+Чем больше людей взламывает один узел, тем выше шанс взлома.\
+"""
 
 [INSTALL_CCTV_SURVEILLANCE]
 title = "Установить камеры наблюдения"
@@ -132,6 +160,81 @@ description = """\
 Позволяет наблюдать за целью, пока она жива или не сменит укрытие (посещает цель).
 """
 
+[INSIDERKNOWLEDGE]
+title = "Инсайдерские знания"
+icon_id = 62
+time = "Дневной"
+cooldown = 2
+visits = false
+occupies = false
+maximum_uses = 2
+rng = false
+description = "Полазить по офису и узнать IP-адрес ценной вторичной цели."
+
+[INTERROGATE]
+title = "Допросить"
+icon_id = 60
+time = "Ночной"
+cooldown = 0
+visits = true
+occupies = true
+maximum_uses = 3
+rng = false
+targeted_at = "игрока"
+description = """\
+Встретиться с целью и... поговорить.
+Завтра вы сможете прочитать их персональный лог
+(по состоянию на эту ночь)
+"""
+
+[KEYLOGGER_PLANT]
+title = "Установить кейлоггеры"
+icon_id = 27
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 1
+rng = false
+description = """\
+Установить USB-кейлоггеры в организации.\
+Их можно забрать ночью.\
+"""
+
+[KEYLOGGER_RETRIEVE]
+title = "Забрать кейлоггеры"
+icon_id = 26
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 1
+rng = false
+description = """\
+Получить информацию из кейлоггеров, \
+немного увеличив все шансы взлома завтра.\
+"""
+
+[MOVE_HIDEOUT]
+title = "Сменить укрытие"
+icon_id = 5
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 1
+rng = false
+description = """\
+Переместиться в более безопасное укрытие, \
+что спасёт вас от попыток ареста, убийства и сделок.\
+"""
+
+[NOT_A_SNITCH]
+title = "Не стукач"
+icon_id = 49
+time = "Пассивный"
+description = "Вы никогда не согласитесь на сделку - лучше сесть в тюрьму."
+
 [PERFORM_CCTV_SURVEILLANCE]
 title = "Наблюдать за камерами"
 icon_id = 18
@@ -140,4 +243,29 @@ description = """\
 Наблюдать за человеком ночью. \
 Вы будете знать, если его посетят этой ночью \
 (сначала необходимо установить СОВН)\
+"""
+
+[TARGET_KNOWLEDGE]
+title = "Наблюдать за камерами"
+icon_id = 66
+time = "Пассивный"
+description = """\
+Вы можете собрать воедино кусочки информации, подслушанные в офисе - \
+если NETSEC имеет доступ к узлу, напрямому соединённому с Целевым Узлом, \
+вы об этом узнаете.\
+"""
+
+[ZERODAY_EXPLOIT]
+title = "Эксплойт 0-го дня"
+icon_id = 4
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 1
+rng = false
+description = """\
+Вы хранили этот эксплойт 0-го дня для особого случая. \
+Вероятно, случай наступил. Не упустите эту возможность. \
+(100% шанс взломать узел)\
 """

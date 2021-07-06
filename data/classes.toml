@@ -1,3 +1,46 @@
+[NETSEC_CCTV_SPECIALIST]
+title = "СОВН-специалист"
+icon_id = 2
+unique = false
+guaranteed = false
+faction = "NETSEC"
+type = "Оперативник"
+skills = [
+    "CREATE_HIDEOUT",
+    "BAIT_LAW_ENFORCEMENT",
+    "DESPERATE_MEASURES",
+    "MOVE_HIDEOUT",
+    "INSTALL_CCTV_SURVEILLANCE",
+    "PERFORM_CCTV_SURVEILLANCE",
+]
+description = """\
+Вас нанял Лидер операции - вы должны следить, чтобы правоохранительные органы не мешали операции. \
+Вы - один из немногих, кто знает физическое местоположение каждого участника, \
+и на вас лежит задача наблюдения за происходящим путём установки и мониторинга скрытых камер. \
+Кто угодно может сотрудничать с правоохранительными органами - для этого и нужна классическая "внешка".\
+"""
+
+[NETSEC_ENFORCER]
+title = "Силовик"
+icon_id = 8
+unique = false
+guaranteed = false
+faction = "NETSEC"
+type = "Оперативник"
+skills = [
+    "DESPERATE_MEASURES",
+    "INTERROGATE",
+    "ESCORT",
+    "DISORGANIZED_MURDER",
+    "DIVERSION",
+]
+description = """\
+Иногда, судьба нуждается в пинке - буквально. \
+Вы ничего не знаете о взломе, но ваши мышцы будут очень сильным активом для NETSEC. \
+Для вас не проблема быть вновь арестованным, \
+если это обеспечит безопасность ваших партнеров хотя бы ненадолго.\
+"""
+
 [NETSEC_OPLEADER]
 title = "Лидер операции"
 icon_id = 1
@@ -19,24 +62,25 @@ description = """\
 Хотя у вас есть навыки взлома, вам нужно сосредоточиться на других вопросах для успеха всей операции. Не попадитесь.\
 """
 
-[NETSEC_CCTV_SPECIALIST]
-title = "СОВН-специалист"
-icon_id = 2
+[NETSEC_INSIDEMAN]
+skills = [
+    "KEYLOGGER_PLANT",
+    "INSIDERKNOWLEDGE",
+    "DESPERATE_MEASURES",
+    "FOLLOW",
+    "KEYLOGGER_RETRIEVE",
+    "DUMPSTER_DIVE",
+    "TARGET_KNOWLEDGE",
+]
+title = "Свой человек"
+icon_id = 6
 unique = false
 guaranteed = false
 faction = "NETSEC"
 type = "Оперативник"
-skills = [
-    "CREATE_HIDEOUT",
-    "BAIT_LAW_ENFORCEMENT",
-    "DESPERATE_MEASURES",
-    "MOVE_HIDEOUT",
-    "INSTALL_CCTV_SURVEILLANCE",
-    "PERFORM_CCTV_SURVEILLANCE",
-]
 description = """\
-Вас нанял Лидер операции - вы должны следить, чтобы правоохранительные органы не мешали операции. \
-Вы - один из немногих, кто знает физическое местоположение каждого участника, \
-и на вас лежит задача наблюдения за происходящим путём установки и мониторинга скрытых камер. \
-Кто угодно может сотрудничать с правоохранительными органами - для этого и нужна классическая "внешка".\
+У вас нет высокого уровня доступа в целевой организации, но ведь это лучше, чем никакого доступа, верно? \
+Вы просто рядовой сотрудник, не боящийся испачкать руки за деньги. \
+Вы не совсем понимаете, почему группа NETSEC нацелилась на вашего работодателя, но вам нет до этого дела. \
+Вам просто мало платят.\
 """
