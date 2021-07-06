@@ -50,7 +50,8 @@ visits = false
 occupies = false
 maximum_uses = 3
 rng = false
-description = ""
+targeted_at = "игрока"
+description = "Отправить команду наёмников для перемещения участника в безопасное место."
 
 [MOVE_HIDEOUT]
 title = "Сменить укрытие"
@@ -61,19 +62,19 @@ visits = false
 occupies = false
 maximum_uses = 1
 rng = false
-description = ""
+description = "Move to a safer hideout, making you safe from arrest, murder and deals attempts."
 
 [NOT_A_SNITCH]
 title = "Не стукач"
 icon_id = 49
 time = "Пассивный"
-description = ""
+description = "Вы никогда не согласитесь на сделку - лучше сесть в тюрьму."
 
 [BROADCAST]
 title = "Анонимное вещание"
 icon_id = 67
 time = "Пассивный"
-description = ""
+description = "У вас есть рут-права на всю операцию NETSEC: вы можете отправлять всем анонимные оповещения."
 
 [CREATE_HIDEOUT]
 title = "Создать укрытие"
@@ -84,7 +85,11 @@ visits = false
 occupies = false
 maximum_uses = 2
 rng = false
-description = "Create a new hideout for you to escape to. Better safe than sorry, right? (Adds 1 charge to 'Move Hideout')"
+description = """\
+Создать новое укрытие для побега. \
+Лучше перебдеть, чем недобдеть, верно? \
+(Добавляет одно применение навыку 'Сменить укрытие')\
+"""
 
 [BAIT_LAW_ENFORCEMENT]
 title = "Ложный вызов"
@@ -96,7 +101,10 @@ occupies = false
 maximum_uses = 3
 rng = false
 targeted_at = "игрока"
-description = "Send an anonymous tip to agents about your target being a NETSEC member. Hopefully they will think a bounty hunter did it..."
+description = """\
+Отправить анонимное сообщение AGENT о том, что ваша цель - член NETSEC. \
+Лучше бы они решили, что это был охотник за головами...\
+"""
 
 [DESPERATE_MEASURES]
 title = "Крайние меры"
@@ -107,10 +115,10 @@ visits = false
 occupies = false
 maximum_uses = 1
 rng = false
-description = "Desperate times require desperate measures. Become an Improvised Hacker (usable from Day 4)."
+description = "Тяжёлые времена требуют крайних мер. Стать Хакером-самоучкой (доступно с Дня 4)."
 
 [INSTALL_CCTV_SURVEILLANCE]
-title = "Крайние меры"
+title = "Установить камеры наблюдения"
 icon_id = 19
 time = "Ночной"
 cooldown = 2
@@ -119,10 +127,17 @@ occupies = false
 maximum_uses = 2
 rng = false
 targeted_at = "игрока"
-description = "Install a CCTV system at the subject location. Allows for CCTV surveillance as long as the target is alive and does not move hideout (Visits the target)."
+description = """\
+Установить камеры наблюдения в укрытии цели. \
+Позволяет наблюдать за целью, пока она жива или не сменит укрытие (посещает цель).
+"""
 
 [PERFORM_CCTV_SURVEILLANCE]
-title = "Наблюдение за камерами"
+title = "Наблюдать за камерами"
 icon_id = 18
 time = "Пассивный"
-description = "keep tabs on a person tonight. You will know if he/she has been visited tonight (Requires installation of CCTV first)"
+description = """\
+Наблюдать за человеком ночью. \
+Вы будете знать, если его посетят этой ночью \
+(сначала необходимо установить СОВН)\
+"""
