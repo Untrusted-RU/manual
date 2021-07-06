@@ -6,8 +6,9 @@ weight = 2
 id = "NEUTRAL"
 image = "systemIcon"
 members = [
-    "NEUTRAL_BOUNTY_HUNTER",
     "NEUTRAL_JOURNALIST",
+    "NEUTRAL_SCRIPT_KIDDIE",
+    "NEUTRAL_BOUNTY_HUNTER",
 ]
 +++
 
