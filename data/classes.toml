@@ -301,6 +301,34 @@ description = """\
 Вы отомстите, помешав им всем.\
 """
 
+[NEUTRAL_RIVAL]
+title = "Хакер-конкурент"
+icon_id = 22
+unique = true
+guaranteed = false
+faction = "NEUTRAL"
+hack_chance = "средний"
+win_condition = """\
+Не дайте NETSEC победить. \
+Выживите и не будьте арестованным.\
+"""
+type = "Нападающий"
+skills = [
+    "HACK_NODE",
+    "HARDEN",
+    "JAM_NETWORK",
+    "MOVE_HIDEOUT",
+    "WIRETAP",
+    "WIPE",
+    "BLACKMAILED_INFORMER",
+    "PREPARED_FOR_ANYTHING",
+]
+description = """\
+NETSEC, наши соперники, даже не подозревают, что, \
+в кои-то веки, мы их опередили и уже получили доступ к цели. \
+Отличная возможность уничтожить их изнутри на этот раз...\
+"""
+
 [NEUTRAL_SCRIPT_KIDDIE]
 title = "Скрипт-кидди"
 icon_id = 11

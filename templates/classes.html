@@ -15,10 +15,10 @@
         style='width:128px;height:128px;float:left;' alt='Runaway Snitch' />
     <div style="text-align: justify;">
         <p>{{ class.description | safe }}</p>
-        {% if class.extra.unique %}
+        {% if class.unique %}
         <p>Этот класс уникален - только один игрок в каждой игре может иметь эту роль.</p>
         {% endif %}
-        {% if class.extra.guaranteed %}
+        {% if class.guaranteed %}
         <p>Этот класс гарантированно участвует в каждой игре.</p>
         {% endif %}
         {% set faction_path = "factions/" ~ class.faction ~ ".md" | lower %}
@@ -103,3 +103,4 @@
 
 
 {% endblock content %}
+
