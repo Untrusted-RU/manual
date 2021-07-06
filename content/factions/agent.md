@@ -9,10 +9,11 @@ win_condition = "Prevent NETSEC from hacking the target machine and arrest their
 members = []
 +++
 
-The **AGENT** faction is tasked in bringing the NETSEC crew to justice.
-This group is heavily underfunded and cannot run a massive operation by force and has to rely on their undercover operation.
-They are often criticized for their unorthodox methods and nobody cares as long as they get their job done.
+Цель фракции **AGENT** - привлечь к ответственности участников NETSEC.
+Они имеют крайне небольшой бюджет и не могут руководить масштабной штурмовой операцией,
+из-за чего они полагаются на работу под прикрытием.
+Их часто критикуют за нестандартные методы работы, но никому нет дела, пока они делают свою работу.
 
-**WINNING CONDITION**:
-the game ends when the AGENT faction has gained root access of the NETSEC LEADER computer (by making him/her trusting them)
-or when all NETSEC members have been are removed from play.
+**Условия победы**:
+игра заканчивается, когда AGENT получают рут-права от компьютера Лидера операции (втёршись к нему в доверие)
+или когда все члены NETSEC убраны из игры.

@@ -8,9 +8,8 @@ image = "systemIcon"
 members = []
 +++
 
-Some people managed to buy or cheat their way into the NETSEC crew for their own personal gain.
-They have their own agenda that can be met regardless of who – in the end – wins.
-Some of these people may lean more towards a faction than the other,
-but will win the game only if their own conditions have been met,
-regardless of the outcome of the game
-(neutrals wins/loss are calculated independently from the NETSEC/AGENT wins/loss system).
+Некоторым удалось деньгами или ложью получить себе место в NETSEC для собственной выгоды.
+У них свой список дел, который может быть выполнен вне зависимости от того, кто победит.
+Одни из них могут быть более склонны работать с определённой фракцией,
+но смогут победить, только если выполнят данные им условия, вне зависимости от результата игры
+(победы/проигрышы нейтральных классов рассчитываются независимо от побед/проигрышей NETSEC/AGENT).

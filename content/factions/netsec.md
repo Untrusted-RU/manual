@@ -9,10 +9,10 @@ win_condition = "Hack the target computer. If we succeed, even if we are arreste
 members = ["NETSEC_OPLEADER"]
 +++
 
-The **NETSEC** faction is a hacking crew that has been assembled by an unknown mastermind.
-Their goal is to gain control (root access) of a specific server of a target network.
-Nobody really knows their previous exploits and if they are just criminals or if they are working towards a more noble goal.
-Truth is, their methods are often very illegal, if not entirely evil.
+**NETSEC** - команда хакеров, собранная неизвестным гением.
+Их цель - получить доступ к определённому серверу в данной сети.
+Никто не знает их предыдущих методов, являются ли они обычными преступниками, или преследуют более высокую цель.
+По правде, их методы часто крайне незаконны, если не аморальны вовсе.
 
-**WINNING CONDITION**:
-the game ends when the NETSEC group has gained root access of the target node or when all AGENTs have been removed from play.
+**Условия победы**:
+игра заканчивается, когда NETSEC получают доступ к Целевому Узлу, или когда все члены AGENT убраны из игры.
