@@ -39,16 +39,23 @@
     <p><b>Доступные навыки:</b></p>
     {% for skill_id in class.skills %}
     {% set skill = skills[skill_id] %}
-    <div style="vertical-align:middle;margin-top:5px;"><a onclick="jQuery('.skilldetail').slideUp();jQuery('#skill-{{ class_id }}-{{ skill_id }}').slideDown(500);
-
-jQuery('body').scrollTo('#skillanchor-{{ class_id }}',{duration:500});
-
-" style="cursor: pointer;">{{ skill.title }}</a> <a onclick="jQuery('.skilldetail').slideUp();jQuery('#skill-{{ class_id }}-{{ skill_id }}').slideDown(500);
-
-jQuery('body').scrollTo('#skillanchor-{{ class_id }}',{duration:500});
-
-" style="cursor: pointer;"> <img src="https://www.playuntrusted.com/skillsicons/{{ skill.icon_id }}.png"
-                style="width:48px;height:48px;"></a> </div>
+    <div style="vertical-align:middle;margin-top:5px;">
+        <a onclick="
+            jQuery('.skilldetail').slideUp();
+            jQuery('#skill-{{ class_id }}-{{ skill_id }}').slideDown(500);
+            jQuery('body').scrollTo('#skillanchor-{{ class_id }}',{duration:500});
+        " style="cursor: pointer;">
+            {{ skill.title }}
+        </a>
+        <a onclick="
+            jQuery('.skilldetail').slideUp();
+            jQuery('#skill-{{ class_id }}-{{ skill_id }}').slideDown(500);
+            jQuery('body').scrollTo('#skillanchor-{{ class_id }}',{duration:500});
+        " style="cursor: pointer;">
+            <img src="https://www.playuntrusted.com/skillsicons/{{ skill.icon_id }}.png"
+                style="width:48px;height:48px;">
+        </a>
+    </div>
     {% endfor %}
 </div>
 <div id="skillanchor-{{ class_id }}"></div>
