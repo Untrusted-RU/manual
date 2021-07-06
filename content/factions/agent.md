@@ -6,8 +6,10 @@ weight = 1
 id = "AGENT"
 image = "3_faction_agent"
 win_condition = """\
-Помешать NETSEC
-Prevent NETSEC from hacking the target machine and arrest their original leader, or gain root privileges from their Operation Leader, or arrest every NETSEC operative."
+Помешать NETSEC взломать целевой узел \
+и арестовать их изначального лидера, \
+или получить рут-права от Лидера операции, \
+или арестовать всех членов NETSEC.\
 """
 members = []
 +++
