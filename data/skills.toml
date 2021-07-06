@@ -1,0 +1,128 @@
+[HACK_NODE]
+title = "Взломать цель"
+icon_id = 1
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = true
+description = """\
+Попытаться взломать узел (направлен на узел, оставляет лог). \
+Чем больше людей взламывает один узел, тем выше шанс взлома.\
+"""
+
+[ZERODAY_EXPLOIT]
+title = "Эксплойт 0-го дня"
+icon_id = 4
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 1
+rng = false
+description = """\
+Вы хранили этот эксплойт 0-го дня для особого случая. \
+Вероятно, случай наступил. Не упустите эту возможность. \
+(100% шанс взломать узел)\
+"""
+
+[GRANT_ROOT]
+title = "Дать рут-права"
+icon_id = 6
+time = "Дневной"
+cooldown = 0
+visits = true
+occupies = false
+maximum_uses = 1
+rng = false
+description = """\
+Дать рут-права на всю операцию определённому игроку. \
+Если вы умрёте или будете арестованы, этот игрок станет новым Лидером операции.\
+"""
+
+[EMERGENCY_EXTRACTION]
+title = "Экстренная эвакуация"
+icon_id = 2
+time = "Ночной"
+cooldown = 2
+visits = false
+occupies = false
+maximum_uses = 3
+rng = false
+description = ""
+
+[MOVE_HIDEOUT]
+title = "Сменить укрытие"
+icon_id = 5
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 1
+rng = false
+description = ""
+
+[NOT_A_SNITCH]
+title = "Не стукач"
+icon_id = 49
+time = "Пассивный"
+description = ""
+
+[BROADCAST]
+title = "Анонимное вещание"
+icon_id = 67
+time = "Пассивный"
+description = ""
+
+[CREATE_HIDEOUT]
+title = "Создать укрытие"
+icon_id = 17
+time = "Ночной"
+cooldown = 3
+visits = false
+occupies = false
+maximum_uses = 2
+rng = false
+description = "Create a new hideout for you to escape to. Better safe than sorry, right? (Adds 1 charge to 'Move Hideout')"
+
+[BAIT_LAW_ENFORCEMENT]
+title = "Ложный вызов"
+icon_id = 50
+time = "Дневной"
+cooldown = 2
+visits = false
+occupies = false
+maximum_uses = 3
+rng = false
+targeted_at = "игрока"
+description = "Send an anonymous tip to agents about your target being a NETSEC member. Hopefully they will think a bounty hunter did it..."
+
+[DESPERATE_MEASURES]
+title = "Крайние меры"
+icon_id = 64
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 1
+rng = false
+description = "Desperate times require desperate measures. Become an Improvised Hacker (usable from Day 4)."
+
+[INSTALL_CCTV_SURVEILLANCE]
+title = "Крайние меры"
+icon_id = 19
+time = "Ночной"
+cooldown = 2
+visits = true
+occupies = false
+maximum_uses = 2
+rng = false
+targeted_at = "игрока"
+description = "Install a CCTV system at the subject location. Allows for CCTV surveillance as long as the target is alive and does not move hideout (Visits the target)."
+
+[PERFORM_CCTV_SURVEILLANCE]
+title = "Наблюдение за камерами"
+icon_id = 18
+time = "Пассивный"
+description = "keep tabs on a person tonight. You will know if he/she has been visited tonight (Requires installation of CCTV first)"

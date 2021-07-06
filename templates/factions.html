@@ -17,11 +17,11 @@
 <div class="float: right;">
     <div class="text-alight: right;">
         <b>Играбельные классы:</b>
+        {% set classes = load_data(path="data/classes.toml") %}
         {% for class_id in faction.extra.members %}
-        {% set class_page_path = "classes/" ~ class_id ~ ".md" | lower %}
-        {% set class = get_page(path=class_page_path) %}
+        {% set class = classes[class_id] %}
         <br>
-        <a href="/classes/#{{class.extra.id}}">{{ class.title }} «</a>
+        <a href="/classes/#{{class_id}}">{{ class.title }} «</a>
         {% endfor %}
     </div>
 </div>

@@ -3,23 +3,25 @@
 
 {% block content %}
 {{ super() }}
-{% for class in section.pages %}
+{% set classes = load_data(path="data/classes.toml") %}
+{% set skills = load_data(path="data/skills.toml") %}
+{% for class_id, class in classes %}
 <div style="height:50px;clear:both;"></div>
-<a name="{{ class.extra.id }}"></a>
+<a name="{{ class_id }}"></a>
 <hr />
 <div class="indent-first-p" style="float:left;width:60%;">
     <h1 style="text-align:center;">{{ class.title }}</h1>
-    <img src='https://www.playuntrusted.com/classicons/{{ class.extra.icon_id }}.png'
+    <img src='https://www.playuntrusted.com/classicons/{{ class.icon_id }}.png'
         style='width:128px;height:128px;float:left;' alt='Runaway Snitch' />
     <div style="text-align: justify;">
-        {{ class.content | safe }}
+        <p>{{ class.description | safe }}</p>
         {% if class.extra.unique %}
         <p>Этот класс уникален - только один игрок в каждой игре может иметь эту роль.</p>
         {% endif %}
         {% if class.extra.guaranteed %}
         <p>Этот класс гарантированно участвует в каждой игре.</p>
         {% endif %}
-        {% set faction_path = "factions/" ~ class.extra.faction ~ ".md" | lower %}
+        {% set faction_path = "factions/" ~ class.faction ~ ".md" | lower %}
         {% set faction = get_page(path=faction_path) %}
         <p><b>Фракция:</b> <a href="/factions/#{{ faction.extra.id }}">{{ faction.title }}</a></p>
         <p>
@@ -32,5 +34,62 @@
         </p>
     </div>
 </div>
+<div style="text-align:right;float:right;">
+    <p><b>Тип класса: {{ class.type }}</b></p>
+    <p><b>Доступные навыки:</b></p>
+    {% for skill_id in class.skills %}
+    {% set skill = skills[skill_id] %}
+    <div style="vertical-align:middle;margin-top:5px;"><a onclick="jQuery('.skilldetail').slideUp();jQuery('#skill-{{ class_id }}-{{ skill_id }}').slideDown(500);
+
+jQuery('body').scrollTo('#skillanchor-{{ class_id }}',{duration:500});
+
+" style="cursor: pointer;">{{ skill.title }}</a> <a onclick="jQuery('.skilldetail').slideUp();jQuery('#skill-{{ class_id }}-{{ skill_id }}').slideDown(500);
+
+jQuery('body').scrollTo('#skillanchor-{{ class_id }}',{duration:500});
+
+" style="cursor: pointer;"> <img src="https://www.playuntrusted.com/skillsicons/{{ skill.icon_id }}.png"
+                style="width:48px;height:48px;"></a> </div>
+    {% endfor %}
+</div>
+<div id="skillanchor-{{ class_id }}"></div>
+{% for skill_id in class.skills %}
+{% set skill = skills[skill_id] %}
+<div class="skilldetail" id="skill-{{ class_id }}-{{ skill_id }}" style="clear: both; display: none;"><br>
+    <hr>
+    <div style="float:left;width:60%;">
+        <h1 style="text-align:center;">{{ skill.title }}</h1>
+        <p>{{ skill.description | safe }}</p>
+        <p></p>
+    </div>
+    <div style="float:right;">
+        <div style="text-align:right;"><img src="https://www.playuntrusted.com/skillsicons/{{ skill.icon_id }}.png"
+                style="width:96px;height:96px;"></div>
+        <p style="margin-top:20px;text-align:right;clear:both;color:#00ff01;">{{ skill.time }} навык<br>
+            {% if skill.time != "Пассивный" %}
+            <b>Перезарядка в днях:</b> {{ skill.cooldown }}
+            <br> <b>Посещает цель:</b> {{ macros::boolean_word(value=skill.visits) }}
+            <br> <b>Занимает цель:</b> {{ macros::boolean_word(value=skill.occupies) }}
+            <br> <b>Максимум применений:</b> {{ skill.maximum_uses }}
+            <br> <br> <b>Случайный шанс успеха:</b> {{ macros::boolean_word(value=skill.rng) }}
+            {% endif %}
+        </p>
+    </div>
+    <div style="height:50px;clear:both;"></div>
+    <hr>
+</div>
 {% endfor %}
+
+
+
+
+
+
+
+
+{% endfor %}
+
+
+
+
+
 {% endblock content %}

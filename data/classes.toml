@@ -1,0 +1,42 @@
+[NETSEC_OPLEADER]
+title = "Лидер операции"
+icon_id = 1
+unique = true
+guaranteed = true
+faction = "NETSEC"
+type = "Особый"
+skills = [
+    "HACK_NODE",
+    "ZERODAY_EXPLOIT",
+    "GRANT_ROOT",
+    "EMERGENCY_EXTRACTION",
+    "MOVE_HIDEOUT",
+    "NOT_A_SNITCH",
+    "BROADCAST",
+]
+description = """\
+Вы являетесь лидером операции NETSEC - ваша роль заключается в координации атак и ликвидации потенциальных угроз для вашей операции. \
+Хотя у вас есть навыки взлома, вам нужно сосредоточиться на других вопросах для успеха всей операции. Не попадитесь.\
+"""
+
+[NETSEC_CCTV_SPECIALIST]
+title = "СОВН-специалист"
+icon_id = 2
+unique = false
+guaranteed = false
+faction = "NETSEC"
+type = "Оперативник"
+skills = [
+    "CREATE_HIDEOUT",
+    "BAIT_LAW_ENFORCEMENT",
+    "DESPERATE_MEASURES",
+    "MOVE_HIDEOUT",
+    "INSTALL_CCTV_SURVEILLANCE",
+    "PERFORM_CCTV_SURVEILLANCE",
+]
+description = """\
+Вас нанял Лидер операции - вы должны следить, чтобы правоохранительные органы не мешали операции. \
+Вы - один из немногих, кто знает физическое местоположение каждого участника, \
+и на вас лежит задача наблюдения за происходящим путём установки и мониторинга скрытых камер. \
+Кто угодно может сотрудничать с правоохранительными органами - для этого и нужна классическая "внешка".\
+"""
