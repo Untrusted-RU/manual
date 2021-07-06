@@ -441,6 +441,22 @@ description = """\
 (очистит логи подключения от ложных записей)\
 """
 
+[LOOKING4FRIEND]
+title = "Ищу старого друга"
+icon_id = 51
+time = "Ночной"
+cooldown = 3
+visits = true
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+targeted_at = "игрока"
+description = """\
+Вы хорошо запомнили лицо предателя. \
+Пора за работу. \
+(Вы узнаете, является ли цель изначальным Лидером операции)\
+"""
+
 [MEET_DISCUSS]
 title = "Полуночная встреча"
 icon_id = 12
