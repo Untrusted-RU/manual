@@ -7,6 +7,7 @@ id = "NEUTRAL"
 image = "systemIcon"
 members = [
     "NEUTRAL_BOUNTY_HUNTER",
+    "NEUTRAL_JOURNALIST",
 ]
 +++
 

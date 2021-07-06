@@ -205,6 +205,22 @@ description = """\
 Retaliate from murder attempts. (?)\
 """
 
+[EXPOSE_OP_LEADER]
+title = "Раскрыть Лидера операции"
+icon_id = 76
+time = "Ночной"
+cooldown = 0
+visits = true
+occupies = true
+maximum_uses = 1
+rng = false
+targeted_at = "игрока"
+description = """\
+За телевизионщиками должок: \
+отправить их на раскрытие цели как Лидера операции \
+(вы моментально получите статью в случае успеха)\
+"""
+
 [FOLLOW]
 title = "Следить"
 icon_id = 20
@@ -260,6 +276,23 @@ rng = true
 description = """\
 Попытаться взломать узел (направлен на узел, оставляет лог). \
 Чем больше людей взламывает один узел, тем выше шанс взлома.\
+"""
+
+[IMPARTIAL_SABOTAGE]
+title = "Беспристрастный саботаж"
+icon_id = 69
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = 1
+rng = false
+targeted_at = "сетевой узел"
+description = """\
+Ваша профессиональная этика - понятие растяжимое. \
+Узнайте сенсацию, создав немного драмы, \
+саботируя данный узел \
+(Откатывает узел, оставляет лог подключения и поддельные логи)\
 """
 
 [IMPERSONATE]
@@ -333,6 +366,36 @@ targeted_at = "сетевой узел"
 description = """\
 Исследовать возможные способы взлома данного узла. \
 (Понижает сложность взлома узла)\
+"""
+
+[JOURNALIST_GETSCOOP]
+title = "Узнать сенсацию"
+icon_id = 32
+time = "Ночной"
+cooldown = 2
+visits = true
+occupies = true
+maximum_uses = "неограничено"
+rng = false
+targeted_at = "игрока"
+description = """\
+Скрытно расспросить игрока, \
+чтобы написать статью позже.\
+"""
+
+[JOURNALIST_WRITEARTICLE]
+title = "Написать статью"
+icon_id = 33
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+description = """\
+Написать статью о взломе. \
+(Сначала вам нужно узнать сенсацию от игрока, \
+не являющегося нейтральным)\
 """
 
 [KEYLOGGER_PLANT]
