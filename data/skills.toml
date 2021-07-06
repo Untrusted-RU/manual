@@ -855,6 +855,22 @@ description = """\
 (ваша цель будет занята)\
 """
 
+[SNITCH_TO_COPS]
+title = "Настучать в полицию"
+icon_id = 75
+time = "Ночной"
+cooldown = 3
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+targeted_at = "игрока"
+description = """\
+У вас есть достаточно доказательств, \
+чтобы обычные полицейские смогли провести арест. \
+Не прогадайте...\
+"""
+
 [SOCIOPATH_MURDER]
 title = "Убийство"
 icon_id = 54

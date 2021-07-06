@@ -119,6 +119,26 @@ description = """\
 взлома сетей, изнутри самой NETSEC.\
 """
 
+[AGENT_RUNAWAY_SNITCH]
+title = "Беглый стукач"
+icon_id = 21
+unique = false
+guaranteed = false
+faction = "AGENT"
+type = "Особый"
+skills = [
+    "UNSKILLED_ATTACK",
+    "DISORGANIZED_MURDER",
+    "SNITCH_TO_COPS",
+    "TOPOLOGY_KNOWLEDGE",
+]
+description = """\
+Вы паникуете, мысли путаются, и немудрено - \
+NETSEC идёт за вами, и AGENT уже не могут вам помочь. \
+Остановите взлом любой ценой, сбегите \
+и начните новую жизнь в тени.\
+"""
+
 [NETSEC_ANALYST]
 title = "Аналитик"
 icon_id = 9
