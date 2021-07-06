@@ -1,3 +1,28 @@
+[AGENT_LEADER]
+title = "Лидер AGENT"
+icon_id = 15
+unique = true
+guaranteed = true
+faction = "AGENT"
+type = "Особый"
+hack_chance = "средний"
+skills = [
+    "ALL_IN",
+    "ROLLBACK",
+    "COMPUTER_FORENSICS_BACKGROUND",
+    "MEET_DISCUSS",
+    "STRIKE_DEAL",
+    "INTELLIGENCE_INFORMER",
+    "COVER_CHECKS_OUT",
+    "TOPOLOGY_KNOWLEDGE",
+]
+description = """\
+Вам нравится математика и статистика. \
+Перед вступлением в NETSEC, это было вашей карьерой. \
+При правильных обстоятельствах вы все еще можете взламывать сети, \
+но ваши партнеры рассчитывают на ваши аналитические навыки.\
+"""
+
 [NETSEC_ANALYST]
 title = "Аналитик"
 icon_id = 9
