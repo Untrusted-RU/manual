@@ -14,8 +14,8 @@
 <div style="float: left; width: 60%;">
     {{ faction.content | safe }}
 </div>
-<div class="float: right;">
-    <div class="text-alight: right;">
+<div style="float: right;">
+    <div style="text-align: right;">
         <b>Играбельные классы:</b>
         {% set classes = load_data(path="data/classes.toml") %}
         {% for class_id in faction.extra.members %}
