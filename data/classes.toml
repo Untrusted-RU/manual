@@ -1,3 +1,24 @@
+[NETSEC_ANALYST]
+title = "Аналитик"
+icon_id = 9
+unique = false
+guaranteed = false
+faction = "NETSEC"
+type = "Исследователь"
+skills = [
+    "HACK_NODE",
+    "LOG_ANALYSIS",
+    "DOWNLOAD_INTEL",
+    "MEET_DISCUSS",
+    "ASK_THE_RIGHT_QUESTION",
+]
+description = """\
+Вам нравится математика и статистика. \
+Перед вступлением в NETSEC, это было вашей карьерой. \
+При правильных обстоятельствах вы все еще можете взламывать сети, \
+но ваши партнеры рассчитывают на ваши аналитические навыки.\
+"""
+
 [NETSEC_CCTV_SPECIALIST]
 title = "СОВН-специалист"
 icon_id = 2

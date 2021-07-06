@@ -1,3 +1,18 @@
+[ASK_THE_RIGHT_QUESTION]
+title = "Задать нужный вопрос"
+icon_id = 58
+time = "Ночной"
+cooldown = 3
+visits = true
+occupies = false
+maximum_uses = 2
+rng = false
+targeted_at = "игрока"
+description = """\
+Посетить цель этой ночью для личного обсуждения взлома. \
+Вы узнаете, обладает ли этот человек настоящим навыком 'Взломать узел'.\
+"""
+
 [BAIT_LAW_ENFORCEMENT]
 title = "Ложный вызов"
 icon_id = 50
@@ -62,6 +77,23 @@ title = "Диверсия"
 icon_id = 59
 time = "Пассивный"
 description = "Когда вы сопровождаете кого-то, вместо вашей цели арестуют вас."
+
+[DOWNLOAD_INTEL]
+title = "Скачать данные"
+icon_id = 56
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+targeted_at = "сетевой узел"
+description = """\
+Поискать важную личную информацию на взломанном узле. \
+В случае успеха мы либо получим больше времени на взлом, \
+либо узнаем IP-адрес целевого узла, \
+либо получим важную информацию о нашей команде.\
+"""
 
 [DUMPSTER_DIVE]
 title = "Копаться в мусоре"
@@ -132,7 +164,7 @@ description = """\
 """
 
 [HACK_NODE]
-title = "Взломать цель"
+title = "Взломать узел"
 icon_id = 1
 time = "Дневной"
 cooldown = 0
@@ -215,6 +247,37 @@ description = """\
 немного увеличив все шансы взлома завтра.\
 """
 
+[LOG_ANALYSIS]
+title = "Анализ логов"
+icon_id = 22
+time = "Дневной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+targeted_at = "сетевой узел"
+description = """\
+Сопоставить сетевые логи, чтобы найти подозрительные потоки данных. \
+(очистит логи подключения от ложных записей)\
+"""
+
+[MEET_DISCUSS]
+title = "Полуночная встреча"
+icon_id = 12
+time = "Ночной"
+cooldown = 2
+visits = true
+occupies = true
+maximum_uses = "неограничено"
+rng = false
+targeted_at = "игрока"
+description = """\
+Meet with a target player tonight to discuss important matters. (Occupies player, visits the target)
+Встретиться с целью этой ночью для обсуждения важных планов. \
+(Занимает и посещает цель)\
+"""
+
 [MOVE_HIDEOUT]
 title = "Сменить укрытие"
 icon_id = 5
@@ -251,7 +314,7 @@ icon_id = 66
 time = "Пассивный"
 description = """\
 Вы можете собрать воедино кусочки информации, подслушанные в офисе - \
-если NETSEC имеет доступ к узлу, напрямому соединённому с Целевым Узлом, \
+если NETSEC имеет доступ к узлу, напрямому соединённому с целевым узлом, \
 вы об этом узнаете.\
 """
 
