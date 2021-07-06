@@ -109,6 +109,22 @@ description = """\
 Вам просто мало платят.\
 """
 
+[NETSEC_IMPROVISED_HACKER]
+title = "Хакер-самоучка"
+icon_id = 20
+unique = false
+guaranteed = false
+faction = "NETSEC"
+type = "Нападающий"
+hack_chance = "очень низкий"
+skills = ["HACK_NODE", "DOWNLOAD_INTEL", "MOVE_HIDEOUT", "DUMPSTER_DIVE"]
+description = """\
+Вы никогда не учили ничего о хакинге, \
+и нанимали вас по другим причинам. \
+Вы будете слепо следовать инструкциям \
+и надеяться на лучшее.\
+"""
+
 [NETSEC_NETWORK_SPECIALIST]
 title = "Сетевой специалист"
 icon_id = 3

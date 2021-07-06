@@ -18,6 +18,7 @@ members = [
     "NETSEC_SOCIAL_ENGINEER",
     "NETSEC_ENFORCER",
     "NETSEC_ANALYST",
+    "NETSEC_IMPROVISED_HACKER",
 ]
 +++
 
