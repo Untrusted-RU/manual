@@ -1,0 +1,32 @@
+{% extends "section.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+{{ super() }}
+{% set skills = load_data(path="data/skills.toml") %}
+{% for skill_id, skill in skills %}
+<hr />
+<div style="float:left;width:60%;">
+    <a name="{{ skill_id }}"></a>
+    <h1 style="text-align:center;">{{ skill.title }}</h1>
+    <p>{{ skill.description | safe }}</p>
+    {% if skill.time != "Пассивный" %}
+    <p>{{ skill.time }} навык{% if skill.targeted_at %}, направлен на {{ skill.targeted_at }}{% endif %}</p>
+    {% endif %}
+</div>
+<div style="float:right;">
+    <div style="text-align:right;"><img src="https://www.playuntrusted.com/skillsicons/{{ skill.icon_id }}.png"
+            style="width:96px;height:96px;"></div>
+    <p style="margin-top:20px;text-align:right;clear:both;color:#00ff01;">{{ skill.time }} навык<br>
+        {% if skill.time != "Пассивный" %}
+        <b>Перезарядка в днях:</b> {{ skill.cooldown }}
+        <br> <b>Посещает цель:</b> {{ macros::boolean_word(value=skill.visits) }}
+        <br> <b>Занимает цель:</b> {{ macros::boolean_word(value=skill.occupies) }}
+        <br> <b>Максимум применений:</b> {{ skill.maximum_uses }}
+        <br> <b>Случайный шанс успеха:</b> {{ macros::boolean_word(value=skill.rng) }}
+        {% endif %}
+    </p>
+</div>
+<div style="height:50px;clear:both;"></div>
+{% endfor %}
+{% endblock content %}
