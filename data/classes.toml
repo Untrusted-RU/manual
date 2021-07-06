@@ -245,6 +245,35 @@ description = """\
 но теперь пришло время заработать по-крупному.\
 """
 
+[NEUTRAL_CORRUPT_DETECTIVE]
+title = "Коррумпированный детектив"
+icon_id = 23
+unique = true
+guaranteed = false
+faction = "NEUTRAL"
+win_condition = """\
+Украдите и загрузите данные, и не дайте AGENT победить: \
+выживите и не будьте арестованными.\
+"""
+type = "Оперативник"
+skills = [
+    "UNSKILLED_ATTACK",
+    "UPLOAD_INTEL",
+    "GET_BRIBE",
+    "FOLLOW",
+    "SELF_PRESERVATION",
+    "STEAL_INTEL",
+    "NOT_A_SNITCH",
+    "AGENT_SCUM",
+]
+description = """\
+Вы пользовались своей должностью в органах, \
+чтобы платить за свой нездоровый образ жизни, \
+и некоторые это заметили, в том числе Лидер операции. \
+Это ваше последнее дело: хватайте деньги и смывайтесь, \
+пока у вас ещё есть время.\
+"""
+
 [NEUTRAL_JOURNALIST]
 title = "Журналист"
 icon_id = 10
