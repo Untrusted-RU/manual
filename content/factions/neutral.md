@@ -5,7 +5,9 @@ weight = 2
 [extra]
 id = "NEUTRAL"
 image = "systemIcon"
-members = []
+members = [
+    "NEUTRAL_BOUNTY_HUNTER",
+]
 +++
 
 Некоторым удалось деньгами или ложью получить себе место в NETSEC для собственной выгоды.

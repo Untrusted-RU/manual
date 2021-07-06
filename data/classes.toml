@@ -214,3 +214,33 @@ description = """\
 что позволяет вам заполучить и использовать \
 доверие вашей цели.\
 """
+
+[NEUTRAL_BOUNTY_HUNTER]
+title = "Охотник за головами"
+icon_id = 12
+unique = true
+guaranteed = false
+faction = "NEUTRAL"
+win_condition = """\
+Посодействуйте аресту как минимум 3 членов NETSEC, \
+либо напрямую, либо донести на них AGENT \
+с помощью навыка 'Проговориться'. \
+Не умрите в процессе.\
+"""
+type = "Оперативник"
+skills = [
+    "UNSKILLED_ATTACK",
+    "SPILL_BEANS",
+    "PLANT_FAKE_INFORMATION",
+    "DOXX",
+    "FRAME",
+    "CITIZENS_ARREST",
+    "NO_DIRT_ON_ME",
+    "NOT_A_SNITCH",
+]
+description = """\
+Вам нет НИКАКОГО дела до взлома. \
+Вам просто нужны деньги. \
+Место в команде NETSEC стоило вам больших денег, \
+но теперь пришло время заработать по-крупному.\
+"""
