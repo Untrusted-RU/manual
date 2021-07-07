@@ -1,0 +1,30 @@
+{% set classes = load_data(path="data/classes.toml") %}
+{% set class = classes[id] %}
+{% if path %}
+{% set href = "/advanced-strategy/" ~ path %}
+{% else %}
+{% set href = "/advanced-strategy/" ~ id | lower | replace(from="_", to="-") %}
+{% endif %}
+{% if not disabled %}
+<td style="width: 150px;">
+    <div style="width: 150px; display: block; text-align: center; margin: auto;">
+        <a href="{{ href }}">
+            <img style="width: 128px; height: 128px; float: right;"
+                src="https://i0.wp.com/www.playuntrusted.com/classicons/{{ class.icon_id }}.png?w=924&#038;ssl=1"
+                alt="{{ class.title }}" data-recalc-dims="1" />
+        </a>
+        <a href="{{ href }}">
+            Стратегия игры - {% if title %}{{ title }}{% else %}{{ class.title }}{% endif %}
+        </a>
+    </div>
+</td>
+{% else %}
+<td style="width: 150px;">
+    <div style="width: 150px; display: block; text-align: center; margin: auto;">
+        <img style="width: 128px; height: 128px; float: right;"
+            src="https://i0.wp.com/www.playuntrusted.com/classicons/{{ class.icon_id }}.png?w=924&#038;ssl=1"
+            alt="{{ class.title }}" data-recalc-dims="1" />
+        <span>Стратегия игры - {% if title %}{{ title }}{% else %}{{ class.title }}{% endif %}</span>
+    </div>
+</td>
+{% endif %}

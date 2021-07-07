@@ -15,153 +15,50 @@ template = "advanced-strategy.html"
 <table style="width: 300px;">
     <tbody>
         <tr>
-            <td style="width: 150px;">
-                <div style="width: 150px; display: block; text-align: center; margin: auto;"><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/operation-leader-strategy-guide/"><img
-                            style="width: 128px; height: 128px; float: right;"
-                            src="https://i0.wp.com/www.playuntrusted.com/classicons/1.png?w=924&amp;ssl=1"
-                            alt="Operation Leader" data-recalc-dims="1"
-                            class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1"
-                            loading="eager"><noscript><img style="width: 128px; height: 128px; float: right;"
-                                src="https://i0.wp.com/www.playuntrusted.com/classicons/1.png?w=924&#038;ssl=1"
-                                alt="Operation Leader" data-recalc-dims="1" /></noscript></a><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/operation-leader-strategy-guide/">Стратегия игры - {{ class(id="NETSEC_OPLEADER", link=false) }}</a>
-                </div>
-            </td>
-            <td style="width: 150px;">
-                <div style="width: 150px; display: block; text-align: center; margin: auto;"><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/agent-leader-strategy-guide/"><img
-                            style="width: 128px; height: 128px; float: right;"
-                            src="https://i0.wp.com/www.playuntrusted.com/classicons/15.png?w=924&amp;ssl=1"
-                            alt="Agent Leader" data-recalc-dims="1"
-                            class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1"
-                            loading="eager"><noscript><img style="width: 128px; height: 128px; float: right;"
-                                src="https://i0.wp.com/www.playuntrusted.com/classicons/15.png?w=924&#038;ssl=1"
-                                alt="Agent Leader" data-recalc-dims="1" /></noscript></a><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/agent-leader-strategy-guide/">Стратегия игры - {{ class(id="AGENT_LEADER", link=false) }}</a>
-                </div>
-            </td>
-            <td style="width: 150px;">
-                <div style="width: 150px; display: block; text-align: center; margin: auto;"><a
-                        href="https://www.playuntrusted.com/field-agent-strategy-guide/"><img
-                            style="width: 128px; height: 128px; float: right;"
-                            src="https://i1.wp.com/www.playuntrusted.com/classicons/16.png?w=924&amp;ssl=1"
-                            alt="Field Agent" data-recalc-dims="1"
-                            class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1"
-                            loading="eager"><noscript><img style="width: 128px; height: 128px; float: right;"
-                                src="https://i1.wp.com/www.playuntrusted.com/classicons/16.png?w=924&#038;ssl=1"
-                                alt="Field Agent" data-recalc-dims="1" /></noscript></a><a
-                        href="https://www.playuntrusted.com/field-agent-strategy-guide/">Стратегия игры - {{ class(id="AGENT_FIELD", link=false) }}</a>
-                </div>
-            </td>
-            <td style="width: 150px;">
-                <div style="width: 150px; display: block; text-align: center; margin: auto;"><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/mole-strategy-guide/"><img
-                            style="width: 128px; height: 128px; float: right;"
-                            src="https://i0.wp.com/www.playuntrusted.com/classicons/17.png?w=924&amp;ssl=1" alt="Mole"
-                            data-recalc-dims="1" class="jetpack-lazy-image jetpack-lazy-image--handled"
-                            data-lazy-loaded="1" loading="eager"><noscript><img
-                                style="width: 128px; height: 128px; float: right;"
-                                src="https://i0.wp.com/www.playuntrusted.com/classicons/17.png?w=924&#038;ssl=1"
-                                alt="Mole" data-recalc-dims="1" /></noscript></a><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/mole-strategy-guide/">Стратегия игры - Крот (О/И/Н)</a>
-                </div>
-            </td>
-            <td style="width: 150px;">
-                <div style="width: 150px; display: block; text-align: center; margin: auto;"><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/runaway-snitch-strategy-guide/"><img
-                            style="width: 128px; height: 128px; float: right;"
-                            src="https://i2.wp.com/www.playuntrusted.com/classicons/21.png?w=924&amp;ssl=1"
-                            alt="Runawy Snitch" data-recalc-dims="1"
-                            class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1"
-                            loading="eager"><noscript><img style="width: 128px; height: 128px; float: right;"
-                                src="https://i2.wp.com/www.playuntrusted.com/classicons/21.png?w=924&#038;ssl=1"
-                                alt="Runawy Snitch" data-recalc-dims="1" /></noscript></a><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/runaway-snitch-strategy-guide/">Стратегия игры - {{ class(id="AGENT_RUNAWAY_SNITCH", link=false) }}</a>
-                </div>
-            </td>
-            <td style="width: 150px;">
-                <div style="width: 150px; display: block; text-align: center; margin: auto;"><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/script-kiddie-strategy-guide/"><img
-                            style="width: 128px; height: 128px; float: right;"
-                            src="https://i1.wp.com/www.playuntrusted.com/classicons/11.png?w=924&amp;ssl=1"
-                            alt="Script Kiddie" data-recalc-dims="1"
-                            class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1"
-                            loading="eager"><noscript><img style="width: 128px; height: 128px; float: right;"
-                                src="https://i1.wp.com/www.playuntrusted.com/classicons/11.png?w=924&#038;ssl=1"
-                                alt="Script Kiddie" data-recalc-dims="1" /></noscript></a><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/script-kiddie-strategy-guide/">Стратегия игры - {{ class(id="NEUTRAL_SCRIPT_KIDDIE", link=false) }}</a>
-                </div>
-            </td>
+            {{ strategy_guide(id="NETSEC_OPLEADER", disabled=true)}}
+            {{ strategy_guide(id="AGENT_LEADER", disabled=true)}}
+            {{ strategy_guide(id="AGENT_FIELD", disabled=true)}}
+            {{ strategy_guide(id="AGENT_CONVERTED_FIELDOPS", title="Крот (О/И/Н)", path="mole", disabled=true) }}
+            {{ strategy_guide(id="AGENT_RUNAWAY_SNITCH", disabled=true)}}
+            {{ strategy_guide(id="NEUTRAL_SCRIPT_KIDDIE", disabled=true)}}
         </tr>
         <tr>
-            <td style="width: 150px;">
-                <div style="width: 150px; display: block; text-align: center; margin: auto;"><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/journalist-strategy-guide/"><img
-                            style="width: 128px; height: 128px; float: right;"
-                            src="https://i1.wp.com/www.playuntrusted.com/classicons/10.png?w=924&amp;ssl=1"
-                            alt="Journalist" data-recalc-dims="1" class="jetpack-lazy-image jetpack-lazy-image--handled"
-                            data-lazy-loaded="1" loading="eager"><noscript><img
-                                style="width: 128px; height: 128px; float: right;"
-                                src="https://i1.wp.com/www.playuntrusted.com/classicons/10.png?w=924&#038;ssl=1"
-                                alt="Journalist" data-recalc-dims="1" /></noscript></a><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/journalist-strategy-guide/">Стратегия игры - {{ class(id="NEUTRAL_SCRIPT_KIDDIE", link=false) }}</a>
-                </div>
-            </td>
-            <td style="width: 150px;">
-                <div style="width: 150px; display: block; text-align: center; margin: auto;"><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/rival-hacker-strategy-guide/"><img
-                            style="width: 128px; height: 128px; float: right;"
-                            src="https://i0.wp.com/www.playuntrusted.com/classicons/22.png?w=924&amp;ssl=1"
-                            alt="Rival Hacker" data-recalc-dims="1"
-                            class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1"
-                            loading="eager"><noscript><img style="width: 128px; height: 128px; float: right;"
-                                src="https://i0.wp.com/www.playuntrusted.com/classicons/22.png?w=924&#038;ssl=1"
-                                alt="Rival Hacker" data-recalc-dims="1" /></noscript></a><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/rival-hacker-strategy-guide/">Стратегия игры - {{ class(id="NEUTRAL_RIVAL", link=false) }}</a>
-                </div>
-            </td>
-            <td style="width: 150px;">
-                <div style="width: 150px; display: block; text-align: center; margin: auto;"><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/bounty-hunter-strategy-guide/"><img
-                            style="width: 128px; height: 128px; float: right;"
-                            src="https://i0.wp.com/www.playuntrusted.com/classicons/12.png?w=924&amp;ssl=1"
-                            alt="Bounty Hunter" data-recalc-dims="1"
-                            class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1"
-                            loading="eager"><noscript><img style="width: 128px; height: 128px; float: right;"
-                                src="https://i0.wp.com/www.playuntrusted.com/classicons/12.png?w=924&#038;ssl=1"
-                                alt="Bounty Hunter" data-recalc-dims="1" /></noscript></a><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/bounty-hunter-strategy-guide/">Стратегия игры - {{ class(id="NEUTRAL_BOUNTY_HUNTER", link=false) }}</a>
-                </div>
-            </td>
-            <td style="width: 150px;">
-                <div style="width: 150px; display: block; text-align: center; margin: auto;"><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/sociopath-strategy-guide/"><img
-                            style="width: 128px; height: 128px; float: right;"
-                            src="https://i0.wp.com/www.playuntrusted.com/classicons/13.png?w=924&amp;ssl=1"
-                            alt="Sociopath" data-recalc-dims="1" class="jetpack-lazy-image jetpack-lazy-image--handled"
-                            data-lazy-loaded="1" loading="eager"><noscript><img
-                                style="width: 128px; height: 128px; float: right;"
-                                src="https://i0.wp.com/www.playuntrusted.com/classicons/13.png?w=924&#038;ssl=1"
-                                alt="Sociopath" data-recalc-dims="1" /></noscript></a><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/sociopath-strategy-guide/">Стратегия игры - {{ class(id="NEUTRAL_SOCIOPATH", link=false) }}</a>
-                </div>
-            </td>
-            <td style="width: 150px;">
-                <div style="width: 150px; display: block; text-align: center; margin: auto;"><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/resentful-criminal-strategy-guide/"><img
-                            style="width: 128px; height: 128px; float: right;"
-                            src="https://i0.wp.com/www.playuntrusted.com/classicons/14.png?w=924&amp;ssl=1"
-                            alt="Resentful Criminal" data-recalc-dims="1"
-                            class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1"
-                            loading="eager"><noscript><img style="width: 128px; height: 128px; float: right;"
-                                src="https://i0.wp.com/www.playuntrusted.com/classicons/14.png?w=924&#038;ssl=1"
-                                alt="Resentful Criminal" data-recalc-dims="1" /></noscript></a><a
-                        href="https://www.playuntrusted.com/manual/advanced-strategy/resentful-criminal-strategy-guide/">Стратегия игры - {{ class(id="NEUTRAL_RESENTFUL_CRIMINAL", link=false) }}</a>
-                </div>
-            </td>
-            <td style="width: 150px;">
-            </td>
+            {{ strategy_guide(id="NEUTRAL_JOURNALIST", disabled=true)}}
+            {{ strategy_guide(id="NEUTRAL_RIVAL", disabled=true)}}
+            {{ strategy_guide(id="NEUTRAL_BOUNTY_HUNTER", disabled=true)}}
+            {{ strategy_guide(id="NEUTRAL_SOCIOPATH", disabled=true)}}
+            {{ strategy_guide(id="NEUTRAL_RESENTFUL_CRIMINAL", disabled=true)}}
         </tr>
     </tbody>
 </table>
+
+{{ heading(text="Понимание преданности и приоритета") }}
+
+NETSEC players are initially loyal to their faction and all work together towards a common goal – however, most classes can be converted to the AGENT faction.
+
+Most neutral classes do not care about the outcome of the operation as they have their own objective – thus, they could side one way or another depending on how far they are in achieving their goal.
+
+You must always keep in mind who can be your ally: some neutrals classes may be helpful to you early game, but may switch sides at the end for example if they see that AGENTs are gaining power.
+
+Similarly, don’t forget that a NETSEC may be converted to the AGENT faction (unless immune) so always remember that just because someone was loyal on Day 1, that doesn’t mean that he/she is still loyal later on. In facts, agents tend to try to convert someone that is seen as trusted by other players.
+
+As a NETSEC player, try to create a chain of trust by confirming what happened on certain nights (for example, if somone claims to have escorted someone, ask the escortee if indeed somone came to visit him/her) and work your way from there.
+
+As an AGENT, consider even outing one of your allies to gain power and trust.
+
+As a neutral, find out who your allies are and always think of your goal.
+
+Trust no one.
+
+{{ heading(text="Вторичные цели") }}
+
+There are hidden secondary targets throughout the network topology which hold valuable intel – these are called secondary targets and they can yield information which can help NETSEC, and specifically, the effect can be one of the following:
+
+- **Time Extension**: this node holds information that will delay the deadline by 24 hours.
+- **Target IP Address**: this node holds information about the IP address of the target.
+- **Player Class Type**: this node holds information about the class type of an operative (Offensive, Investigative, Field Ops, Special)
+- **Mole Identity**: this node holds information about the identity of a mole (or absence of it)
+
+&zwnj;{{ class(id="NETSEC_SPEARPHISHER") }} and {{ class(id="NETSEC_ANALYST") }} can use their {{ skill(id="DOWNLOAD_INTEL") }} skill on a node to obtain said information.
+In order to know for certain that a node holds important information, the aid of an {{ class(id="NETSEC_INSIDEMAN") }} is required via their {{ skill(id="INSIDERKNOWLEDGE") }} skill.
+Players can still randomly try to download intel on any node, although that is generally seen suspicious, is absolutely a valid and legitimate operation.
