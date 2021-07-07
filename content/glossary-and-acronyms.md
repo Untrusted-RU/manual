@@ -16,11 +16,11 @@ Untrusted - сложная игра, особенно с 16 игроками.
 <table>
 <tbody><tr>
 <td style="width:150px;font-weight:bold;">Крот</td>
-<td>Игрок, ставший целью навыка <a href="/skills/#STRIKE_DEAL">Предложить сделку</a> и теперь играющий не за NETSEC, а за AGENT.</td>
+<td>Игрок, ставший целью навыка {{ skill(id="STRIKE_DEAL") }} и теперь играющий не за NETSEC, а за AGENT.</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">DOS,DoS</td>
-<td><a href="/skills/#DENIAL_OF_SERVICE">Отказ от обслуживания</a> (Denial of Service)</td>
+<td>{{ skill(id="DENIAL_OF_SERVICE") }} (Denial of Service)</td>
 </tr>
 </tbody></table>
 
@@ -29,78 +29,78 @@ Untrusted - сложная игра, особенно с 16 игроками.
 <table>
 <tbody><tr>
 <td style="width:150px;font-weight:bold;">ЛО</td>
-<td>Лидер операции</td>
+<td>{{ class(id="NETSEC_OPLEADER", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">ИЛО</td>
-<td>Изначальный Лидер операции</td>
+<td>Изначальный {{ class(id="NETSEC_OPLEADER", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">СЛО</td>
-<td>Социопат-Лидер операции</td>
+<td>Социопат-{{ class(id="NETSEC_OPLEADER", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">CCTV, СОВН</td>
-<td>СОВН-специалист</td>
+<td>{{ class(id="NETSEC_CCTV_SPECIALIST", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">СС, сетевик</td>
-<td>Сетевой специалист</td>
+<td>{{ class(id="NETSEC_NETWORK_SPECIALIST", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">ЧШ</td>
-<td>Черношляпник</td>
+<td>{{ class(id="NETSEC_BLACKHAT", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">СИ</td>
-<td>Социальный инженер</td>
+<td>{{ class(id="NETSEC_SOCIAL_ENGINEER", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">СЧ</td>
-<td>Свой человек</td>
+<td>{{ class(id="NETSEC_INSIDEMAN", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">ФМ</td>
-<td>Фишинг-мошенник</td>
+<td>{{ class(id="NETSEC_SPEARPHISHER", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">ХС</td>
-<td>Хакер-самоучка</td>
+<td>{{ class(id="NETSEC_IMPROVISED_HACKER", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">ЛА</td>
-<td>Лидер AGENT</td>
+<td>{{ class(id="AGENT_LEADER", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">ОА</td>
-<td>Оперативник AGENT</td>
+<td>{{ class(id="AGENT_FIELD", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">БС</td>
-<td>Беглый стукач</td>
+<td>{{ class(id="AGENT_RUNAWAY_SNITCH", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">Жур</td>
-<td>Журналист</td>
+<td>{{ class(id="NEUTRAL_JOURNALIST", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">СК</td>
-<td>Скрипт-кидди</td>
+<td>{{ class(id="NEUTRAL_SCRIPT_KIDDIE", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">Соц, социо</td>
-<td>Социопат</td>
+<td>{{ class(id="NEUTRAL_SOCIOPATH", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">ОЗГ</td>
-<td>Охотник за головами</td>
+<td>{{ class(id="NEUTRAL_BOUNTY_HUNTER", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">ЗП</td>
-<td>Злопамятный преступник</td>
+<td>{{ class(id="NEUTRAL_RESENTFUL_CRIMINAL", link=false) }}</td>
 </tr>
 <tr>
 <td style="width:150px;font-weight:bold;">ХК</td>
-<td>Хакер-конкурент</td>
+<td>{{ class(id="NEUTRAL_RIVAL", link=false) }}</td>
 </tr>
 </tbody></table>
