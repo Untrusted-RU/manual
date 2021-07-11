@@ -14,6 +14,8 @@
 
 Спасибо всем, кто поучавствовал в переводе и исправлениях, как на [Discord-сервере Untrusted](https://discord.gg/fMkDCrxU6H), так и вне него:
 
+Хотите помочь? Смотрите [CONTRIBUTING.md](CONTRIBUTING.md)!
+
 - Fallen Angel#4169
 ## Лицензирование
 
