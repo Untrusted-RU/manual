@@ -17,6 +17,7 @@
 
 - Fallen Angel#4169
 - Painted Cat#9159
+- BornToKill946#9771
 
 Хотите помочь? Смотрите [CONTRIBUTING.md](CONTRIBUTING.md)!
 
