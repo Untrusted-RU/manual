@@ -2,7 +2,7 @@ Untrusted - v1.115 - Changelog
 
 New features
 
-- [ ] Technically, New class "Panicked Blabbermouth" (but not really)
+- [x] Technically, New class "Panicked Blabbermouth" (but not really)
 - [ ] "Get Scoop" now will work only on players who have the "Person of Interest" passive skill.
 - [x] New passive skill "Blabbermouth" (Journalists will get two scoops from players with blabbermouth)
 - [x] New passive skill "Person of Interest" (Journalists will get one scoop as long as their target has "Person of Interest")

@@ -464,6 +464,32 @@ description = """\
 В любом случае, ваши дела идут в гору - если останетесь в живых, конечно.\
 """
 
+[NEUTRAL_PANICKED_BLABBERMOUTH]
+title = "Паникующий болтун"
+icon_id = 24
+unique = false
+guaranteed = false
+faction = "NEUTRAL"
+win_condition = "Не умрите. Также, NETSEC не должны победить."
+type = "Нападающий"
+skills = [
+    "UNSKILLED_ATTACK",
+    "CREATE_HIDEOUT",
+    "DENIAL_OF_SERVICE",
+    "MOVE_HIDEOUT",
+    "MURDER_JOURNALIST",
+    "UNSECURED_DEVICE",
+    "BLABBERMOUTH",
+]
+description = """\
+Вы - программист-неудачник, с трудом окончивший университет \
+(и то только потому, что жульничали до самого выпуска). \
+Вы всегда хотели стать 'кулхацкером', \
+но у вас нет вообще никаких познаний в IT. \
+Не совсем понятно, как вы оказались в команде - \
+возможно, кто-то сделает вас козлом отпущения?\
+"""
+
 [NEUTRAL_RESENTFUL_CRIMINAL]
 title = "Злопамятный преступник"
 icon_id = 14
