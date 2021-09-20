@@ -16,7 +16,7 @@ The following changes are experimental. They may or may not be rolled back/adjus
 - [x] "Unskilled attack" now has infinite charges
 - [x] "Misdirection" charges lowered from 2 to 1
 - [x] "Spearphisher" gains "Move Hideout"
-- [ ] "Agent Leader" gains "Unskilled Attack"
+- [x] "Agent Leader" gains "Unskilled Attack"
 - [ ] "Offensive Mole" gains "Unskilled Attack"
 - [ ] "Rival Hacker" gains "Unskilled AttacK"
 - [ ] "Computer Forensics Background" loses "Unskilled attack" from the spawn pool and gains "Harden" instead
