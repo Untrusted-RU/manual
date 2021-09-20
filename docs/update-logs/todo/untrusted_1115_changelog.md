@@ -20,7 +20,7 @@ The following changes are experimental. They may or may not be rolled back/adjus
 - [x] "Offensive Mole" gains "Unskilled Attack"
 - [x] "Rival Hacker" gains "Unskilled AttacK"
 - [x] "Computer Forensics Background" loses "Unskilled attack" from the spawn pool and gains "Harden" instead
-- [ ] "Field Agent" gains "Follow"
+- [x] "Field Agent" gains "Follow"
 - [ ] "Field Ops Mole" gains "Disorganized Murder"
 - [ ] "Script Kiddie" gains "Wake up Call"
 - [ ] All NETSEC (Except social engineer) and AGENTS roles , as well as Corrupt Detective and Rival Hacker, gain "Person of Interest"
