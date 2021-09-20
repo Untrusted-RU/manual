@@ -18,6 +18,12 @@ All notable changes to this project will be documented in this file.
 
 - Fix PB description
 
+### <!-- 3 -->:memo: Documentation
+
+#### TODO
+
+- Remove TODOs from repo
+
 ## [1.118] - 2021-09-20
 
 ### <!-- 1 -->:balance_scale: Balance changes
