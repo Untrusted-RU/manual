@@ -534,10 +534,7 @@ unique = true
 guaranteed = false
 faction = "NEUTRAL"
 hack_chance = "средний"
-win_condition = """\
-Не дайте NETSEC победить. \
-Выживите и не будьте арестованным.\
-"""
+win_condition = "Не дайте NETSEC победить. Выживите."
 type = "Нападающий"
 skills = [
     "UNSKILLED_ATTACK",
@@ -548,7 +545,6 @@ skills = [
     "WIRETAP",
     "WIPE",
     "BLACKMAILED_INFORMER",
-    "PREPARED_FOR_ANYTHING",
     "PERSON_OF_INTEREST",
 ]
 description = """\
