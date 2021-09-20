@@ -37,6 +37,7 @@ skills = [
     "ISP_ISOLATION",
     "STING",
     "ARREST",
+    "FOLLOW",
     "PLANNED_RAID",
     "TOPOLOGY_KNOWLEDGE",
 ]
