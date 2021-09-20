@@ -5,7 +5,7 @@ New features
 - [ ] Technically, New class "Panicked Blabbermouth" (but not really)
 - [ ] "Get Scoop" now will work only on players who have the "Person of Interest" passive skill.
 - [ ] New passive skill "Blabbermouth" (Journalists will get two scoops from players with blabbermouth)
-- [ ] New passive skill "Person of Interest" (Journalists will get one scoop as long as their target has "Person of Interest")
+- [x] New passive skill "Person of Interest" (Journalists will get one scoop as long as their target has "Person of Interest")
 - [x] New skill "Wake up Call" (Panicked Blabbermouth only)
 - [ ] New skill "Murder Journalist" (Panicked Blabbermouth only)
 
