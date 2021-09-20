@@ -16,6 +16,7 @@ skills = [
     "INTELLIGENCE_INFORMER",
     "COVER_CHECKS_OUT",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вам поручили прикрыть деятельность NETSEC навсегда - \
@@ -41,6 +42,7 @@ skills = [
     "FOLLOW",
     "PLANNED_RAID",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вам поручен, собственно, арест членов NETSEC. \
@@ -63,6 +65,7 @@ skills = [
     "ADD_ROUTE",
     "DISORGANIZED_MURDER",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы были частью команды NETSEC, \
@@ -87,6 +90,7 @@ skills = [
     "FRAME",
     "SETUP",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы были частью команды NETSEC, \
@@ -113,6 +117,7 @@ skills = [
     "MEET_DISCUSS",
     "WIPE",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы были частью команды NETSEC, \
@@ -136,6 +141,7 @@ skills = [
     "DISORGANIZED_MURDER",
     "SNITCH_TO_COPS",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы паникуете, мысли путаются, и немудрено - \
