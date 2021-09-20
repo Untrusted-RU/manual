@@ -16,6 +16,7 @@ skills = [
     "INTELLIGENCE_INFORMER",
     "COVER_CHECKS_OUT",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вам поручили прикрыть деятельность NETSEC навсегда - \
@@ -35,11 +36,13 @@ skills = [
     "ALTER_LOGS",
     "UNSKILLED_ATTACK",
     "ISP_ISOLATION",
+    "KEYLOGGER_HONEYPOT",
     "STING",
     "ARREST",
     "FOLLOW",
     "PLANNED_RAID",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вам поручен, собственно, арест членов NETSEC. \
@@ -62,6 +65,7 @@ skills = [
     "ADD_ROUTE",
     "DISORGANIZED_MURDER",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы были частью команды NETSEC, \
@@ -86,6 +90,7 @@ skills = [
     "FRAME",
     "SETUP",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы были частью команды NETSEC, \
@@ -112,6 +117,7 @@ skills = [
     "MEET_DISCUSS",
     "WIPE",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы были частью команды NETSEC, \
@@ -135,6 +141,7 @@ skills = [
     "DISORGANIZED_MURDER",
     "SNITCH_TO_COPS",
     "TOPOLOGY_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы паникуете, мысли путаются, и немудрено - \
@@ -321,6 +328,7 @@ skills = [
     "NOT_A_SNITCH",
     "BROADCAST",
     "PERSON_OF_INTEREST",
+    "HIGH_PRIORITY_TARGET",
 ]
 description = """\
 Вы являетесь лидером операции NETSEC - ваша роль заключается в координации атак и ликвидации потенциальных угроз для вашей операции. \
@@ -382,8 +390,9 @@ unique = true
 guaranteed = false
 faction = "NEUTRAL"
 win_condition = """\
-Посодействуйте аресту как минимум 3 членов NETSEC, \
-либо напрямую, либо донести на них AGENT \
+Посодействуйте аресту как минимум трёх игроков \
+(членов NETSEC или приоритетных целей), \
+либо напрямую, либо донесите на них AGENT \
 с помощью навыка 'Проговориться'. \
 Не умрите в процессе.\
 """
@@ -510,6 +519,7 @@ skills = [
     "INTERROGATE",
     "DISORGANIZED_MURDER",
     "NOT_A_SNITCH",
+    "HIGH_PRIORITY_TARGET",
 ]
 description = """\
 Когда-то давно, NETSEC подставили вас. \
