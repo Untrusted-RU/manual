@@ -1,0 +1,120 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "skills.json",
+    "description": "A schema for data/skills.json",
+    "type": "object",
+    "definitions": {
+        "Skill": {
+            "title": "Skill",
+            "type": "object",
+            "required": [
+                "title",
+                "icon_id",
+                "time",
+                "description"
+            ],
+            "properties": {
+                "title": {
+                    "description": "Title of the skill",
+                    "type": "string",
+                    "minLength": 1
+                },
+                "icon_id": {
+                    "description": "Icon ID of the skill",
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "time": {
+                    "description": "Time of day this skill is active",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "Description of the skill",
+                    "type": "string",
+                    "minLength": 1
+                }
+            },
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/ActiveSkill"
+                },
+                {
+                    "$ref": "#/definitions/PassiveSkill"
+                }
+            ]
+        },
+        "ActiveSkill": {
+            "required": [
+                "cooldown",
+                "visits",
+                "occupies",
+                "maximum_uses",
+                "rng"
+            ],
+            "properties": {
+                "time": {
+                    "enum": [
+                        "Дневной",
+                        "Ночной"
+                    ]
+                },
+                "cooldown": {
+                    "description": "Cooldown (in days)",
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "visits": {
+                    "description": "Does the skill visit a player?",
+                    "type": "boolean",
+                    "default": false
+                },
+                "occupies": {
+                    "description": "Does the skill occupy a player?",
+                    "type": "boolean",
+                    "default": false
+                },
+                "maximum_uses": {
+                    "description": "Maximum uses of the skill",
+                    "oneOf": [
+                        {
+                            "type": "string",
+                            "enum": [
+                                "неограничено"
+                            ]
+                        },
+                        {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    ]
+                },
+                "rng": {
+                    "description": "Is the success of the skill RNG-dependent?",
+                    "type": "boolean",
+                    "default": false
+                },
+                "targeted_at": {
+                    "description": "Target of the skill",
+                    "type": "string",
+                    "enum": [
+                        "игрока",
+                        "сетевой узел"
+                    ]
+                }
+            }
+        },
+        "PassiveSkill": {
+            "properties": {
+                "time": {
+                    "const": "Пассивный"
+                }
+            }
+        }
+    },
+    "patternProperties": {
+        "^[A-Z][A-Z0-9_]*$": {
+            "$ref": "#/definitions/Skill"
+        }
+    },
+    "minProperties": 1
+}

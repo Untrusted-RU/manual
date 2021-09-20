@@ -1,0 +1,107 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "classes.json",
+    "description": "A schema for data/classes.json",
+    "type": "object",
+    "x-taplo-info": {},
+    "definitions": {
+        "Class": {
+            "title": "Class",
+            "required": [
+                "title",
+                "icon_id",
+                "win_condition",
+                "type",
+                "skills",
+                "description"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "icon_id": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "unique": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "guaranteed": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "faction": {
+                    "$ref": "#/definitions/Faction"
+                },
+                "win_condition": {
+                    "type": "string"
+                },
+                "type": {
+                    "$ref": "#/definitions/ClassType"
+                },
+                "hack_chance": {
+                    "$ref": "#/definitions/HackChance"
+                },
+                "skills": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/SkillID"
+                    }
+                },
+                "description": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "class_restriction": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            }
+        },
+        "ClassType": {
+            "title": "Class type",
+            "type": "string",
+            "enum": [
+                "Оперативник",
+                "Исследователь",
+                "Нападающий",
+                "Особый"
+            ]
+        },
+        "Faction": {
+            "title": "Faction",
+            "type": "string",
+            "enum": [
+                "AGENT",
+                "NETSEC",
+                "NEUTRAL"
+            ]
+        },
+        "HackChance": {
+            "title": "Hack chance",
+            "type": "string",
+            "enum": [
+                "очень высокий",
+                "высокий",
+                "средний",
+                "низкий",
+                "очень низкий"
+            ]
+        },
+        "SkillID": {
+            "title": "Skill ID",
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9_]*$"
+        }
+    },
+    "patternProperties": {
+        "^[A-Z][A-Z_]*$": {
+            "$ref": "#/definitions/Class"
+        }
+    },
+    "minProperties": 1,
+    "additionalProperties": false
+}
