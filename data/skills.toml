@@ -647,6 +647,7 @@ visits = false
 occupies = false
 maximum_uses = 1
 rng = false
+targeted_at = "сетевой узел"
 description = """\
 Установить USB-кейлоггеры в организации.\
 Их можно забрать ночью.\
