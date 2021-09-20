@@ -681,7 +681,7 @@ time = "Ночной"
 cooldown = 0
 visits = false
 occupies = true
-maximum_uses = 2
+maximum_uses = 1
 rng = false
 description = "Занять всех, кто посетит вас этой ночью."
 
