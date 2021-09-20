@@ -14,18 +14,9 @@ All notable changes to this project will be documented in this file.
 
 ### <!-- 2 -->:bug: Bug fixes
 
-#### Changelog
+#### Classes
 
-- Revert "add changelogs to releases on push"
-
-### <!-- 3 -->:memo: Documentation
-
-#### Changelog
-
-- Add cliff.toml for git-cliff
-- Add scopes
-- Add changelogs to releases on push
-- Commit CHANGELOG.md
+- Fix PB description
 
 ## [1.118] - 2021-09-20
 
