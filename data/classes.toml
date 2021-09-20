@@ -328,6 +328,7 @@ skills = [
     "NOT_A_SNITCH",
     "BROADCAST",
     "PERSON_OF_INTEREST",
+    "HIGH_PRIORITY_TARGET",
 ]
 description = """\
 Вы являетесь лидером операции NETSEC - ваша роль заключается в координации атак и ликвидации потенциальных угроз для вашей операции. \
@@ -517,6 +518,7 @@ skills = [
     "INTERROGATE",
     "DISORGANIZED_MURDER",
     "NOT_A_SNITCH",
+    "HIGH_PRIORITY_TARGET",
 ]
 description = """\
 Когда-то давно, NETSEC подставили вас. \
