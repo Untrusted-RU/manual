@@ -35,6 +35,7 @@ skills = [
     "ALTER_LOGS",
     "UNSKILLED_ATTACK",
     "ISP_ISOLATION",
+    "KEYLOGGER_HONEYPOT",
     "STING",
     "ARREST",
     "FOLLOW",

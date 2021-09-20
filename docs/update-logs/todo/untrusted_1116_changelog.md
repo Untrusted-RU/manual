@@ -7,7 +7,7 @@ New features
 
 Balance Changes
 
-- [ ] "Field Agent" gains "Keylogger Honeypot"
+- [x] "Field Agent" gains "Keylogger Honeypot"
 - [ ] "Plant Keylogger" behaviour changed: it can now target a node
 - [ ] "Retreieve Keylogger" can no longer 'steal' another inside man keylogger. Keyloggers no longer give the small generic hack bonus to non-keylogged nodes.
 - [ ] "Operation Leader" and "Resentful Criminal" gain "High Priority Target"
