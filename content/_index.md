@@ -85,4 +85,4 @@ title = "Руководство"
 свяжитесь со мной через Steam ([orekushii](https://steamcommunity.com/id/orekushii))
 или Discord (BrightOne#2574).
 
-Перевод обновлён 06.07.2021 для версии Untrusted 1.107b.
+Перевод обновлён 20.09.2021 для версии Untrusted 1.115.
