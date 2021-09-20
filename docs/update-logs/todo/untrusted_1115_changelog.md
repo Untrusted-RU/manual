@@ -22,6 +22,6 @@ The following changes are experimental. They may or may not be rolled back/adjus
 - [x] "Computer Forensics Background" loses "Unskilled attack" from the spawn pool and gains "Harden" instead
 - [x] "Field Agent" gains "Follow"
 - [x] "Field Ops Mole" gains "Disorganized Murder"
-- [ ] "Script Kiddie" gains "Wake up Call"
+- [x] "Script Kiddie" gains "Wake up Call"
 - [ ] All NETSEC (Except social engineer) and AGENTS roles , as well as Corrupt Detective and Rival Hacker, gain "Person of Interest"
 - [ ] "Agent Leader" can no longer get "Operation Leader" as cover.

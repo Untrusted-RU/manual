@@ -522,6 +522,7 @@ skills = [
     "DENIAL_OF_SERVICE",
     "SCRIPTKIDDIE_ATTACK",
     "MOVE_HIDEOUT",
+    "WAKE_UP_CALL",
     "NOT_A_SNITCH",
     "UNSECURED_DEVICE",
 ]
