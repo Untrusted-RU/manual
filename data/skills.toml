@@ -1058,6 +1058,21 @@ rng = false
 targeted_at = "сетевой узел"
 description = "Загрузить украденные данные на данный узел."
 
+[WAKE_UP_CALL]
+title = "Очистить узел"
+icon_id = 89
+time = "Ночной"
+cooldown = 0
+visits = false
+occupies = false
+maximum_uses = "неограничено"
+rng = false
+description = """\
+Прислушаться к своему сознанию и встать против NETSEC. \
+Вы станете Паникующим болнуном. \
+Работает только после смерти как минимум трёх людей.\
+"""
+
 [WIPE]
 title = "Очистить узел"
 icon_id = 68
