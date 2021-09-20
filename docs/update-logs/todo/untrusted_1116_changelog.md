@@ -3,7 +3,7 @@ Untrusted - v1.116 - Changelog
 New features
 
 - [x] New skill "High Priority Target"
-- [ ] New skill "Keylogger Honeypot"
+- [x] New skill "Keylogger Honeypot"
 
 Balance Changes
 
