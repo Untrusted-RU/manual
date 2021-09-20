@@ -14,7 +14,7 @@ Balance Changes
 The following changes are experimental. They may or may not be rolled back/adjusted soon. Please report feedback over the discord in #suggestions
 
 - [x] "Unskilled attack" now has infinite charges
-- [ ] "Misdirection" charges lowered from 2 to 1
+- [x] "Misdirection" charges lowered from 2 to 1
 - [ ] "Spearphisher" gains "Move Hideout"
 - [ ] "Agent Leader" gains "Unskilled Attack"
 - [ ] "Offensive Mole" gains "Unskilled Attack"
