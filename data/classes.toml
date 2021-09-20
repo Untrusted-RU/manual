@@ -104,6 +104,7 @@ guaranteed = false
 faction = "AGENT"
 type = "Нападающий"
 skills = [
+    "UNSKILLED_ATTACK",
     "ROLLBACK",
     "HARDEN",
     "MEET_DISCUSS",
