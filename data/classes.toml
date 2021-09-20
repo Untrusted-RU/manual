@@ -7,6 +7,7 @@ faction = "AGENT"
 type = "Особый"
 hack_chance = "средний"
 skills = [
+    "UNSKILLED_ATTACK",
     "ALL_IN",
     "ROLLBACK",
     "COMPUTER_FORENSICS_BACKGROUND",
@@ -36,6 +37,7 @@ skills = [
     "ISP_ISOLATION",
     "STING",
     "ARREST",
+    "FOLLOW",
     "PLANNED_RAID",
     "TOPOLOGY_KNOWLEDGE",
 ]
@@ -58,6 +60,7 @@ skills = [
     "SEARCH_FOR_KEYLOGGERS",
     "WIRETAP",
     "ADD_ROUTE",
+    "DISORGANIZED_MURDER",
     "TOPOLOGY_KNOWLEDGE",
 ]
 description = """\
@@ -103,6 +106,7 @@ guaranteed = false
 faction = "AGENT"
 type = "Нападающий"
 skills = [
+    "UNSKILLED_ATTACK",
     "ROLLBACK",
     "HARDEN",
     "MEET_DISCUSS",
@@ -153,6 +157,7 @@ skills = [
     "DOWNLOAD_INTEL",
     "MEET_DISCUSS",
     "ASK_THE_RIGHT_QUESTION",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вам нравится математика и статистика. \
@@ -175,6 +180,7 @@ skills = [
     "DENIAL_OF_SERVICE",
     "MEET_DISCUSS",
     "NOT_A_SNITCH",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы не просто хороши во взломе компьютеров - \
@@ -198,6 +204,7 @@ skills = [
     "MOVE_HIDEOUT",
     "INSTALL_CCTV_SURVEILLANCE",
     "PERFORM_CCTV_SURVEILLANCE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вас нанял Лидер операции - вы должны следить, чтобы правоохранительные органы не мешали операции. \
@@ -219,6 +226,7 @@ skills = [
     "ESCORT",
     "DISORGANIZED_MURDER",
     "DIVERSION",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Иногда, судьба нуждается в пинке - буквально. \
@@ -242,6 +250,7 @@ skills = [
     "KEYLOGGER_RETRIEVE",
     "DUMPSTER_DIVE",
     "TARGET_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 У вас нет высокого уровня доступа в целевой организации, но ведь это лучше, чем никакого доступа, верно? \
@@ -258,7 +267,13 @@ guaranteed = false
 faction = "NETSEC"
 type = "Нападающий"
 hack_chance = "очень низкий"
-skills = ["HACK_NODE", "DOWNLOAD_INTEL", "MOVE_HIDEOUT", "DUMPSTER_DIVE"]
+skills = [
+    "HACK_NODE",
+    "DOWNLOAD_INTEL",
+    "MOVE_HIDEOUT",
+    "DUMPSTER_DIVE",
+    "PERSON_OF_INTEREST",
+]
 description = """\
 Вы никогда не учили ничего о хакинге, \
 и нанимали вас по другим причинам. \
@@ -280,6 +295,7 @@ skills = [
     "INVESTIGATE_NODE",
     "COVER_TRACKS",
     "REVIEW_CONNECTION_LOGS",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Хоть у вас и есть несколько трюков в рукаве для взлома компьютеров, \
@@ -304,6 +320,7 @@ skills = [
     "MOVE_HIDEOUT",
     "NOT_A_SNITCH",
     "BROADCAST",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы являетесь лидером операции NETSEC - ваша роль заключается в координации атак и ликвидации потенциальных угроз для вашей операции. \
@@ -343,8 +360,10 @@ skills = [
     "HACK_NODE",
     "SPEARPHISH_EXECUTION",
     "DOWNLOAD_INTEL",
+    "MOVE_HIDEOUT",
     "MISDIRECTION",
     "SPEARPHISH_PREPARATION",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Пусть вы и не так хороши, как Черношляпник, \
@@ -406,6 +425,7 @@ skills = [
     "STEAL_INTEL",
     "NOT_A_SNITCH",
     "AGENT_SCUM",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы пользовались своей должностью в органах, \
@@ -442,6 +462,32 @@ description = """\
 как один из величайших взломов истории был организован (в случае успеха) \
 или предотвращён правоохранительными органами (в случае неудачи). \
 В любом случае, ваши дела идут в гору - если останетесь в живых, конечно.\
+"""
+
+[NEUTRAL_PANICKED_BLABBERMOUTH]
+title = "Паникующий болтун"
+icon_id = 24
+unique = false
+guaranteed = false
+faction = "NEUTRAL"
+win_condition = "Не умрите. Также, NETSEC не должны победить."
+type = "Нападающий"
+skills = [
+    "UNSKILLED_ATTACK",
+    "CREATE_HIDEOUT",
+    "DENIAL_OF_SERVICE",
+    "MOVE_HIDEOUT",
+    "MURDER_JOURNALIST",
+    "UNSECURED_DEVICE",
+    "BLABBERMOUTH",
+]
+description = """\
+Вы - программист-неудачник, с трудом окончивший университет \
+(и то только потому, что жульничали до самого выпуска). \
+Вы всегда хотели стать 'кулхацкером', \
+но у вас нет вообще никаких познаний в IT. \
+Не совсем понятно, как вы оказались в команде - \
+возможно, кто-то сделает вас козлом отпущения?\
 """
 
 [NEUTRAL_RESENTFUL_CRIMINAL]
@@ -484,6 +530,7 @@ win_condition = """\
 """
 type = "Нападающий"
 skills = [
+    "UNSKILLED_ATTACK",
     "HACK_NODE",
     "HARDEN",
     "JAM_NETWORK",
@@ -492,6 +539,7 @@ skills = [
     "WIPE",
     "BLACKMAILED_INFORMER",
     "PREPARED_FOR_ANYTHING",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 NETSEC, наши соперники, даже не подозревают, что, \
@@ -516,6 +564,7 @@ skills = [
     "DENIAL_OF_SERVICE",
     "SCRIPTKIDDIE_ATTACK",
     "MOVE_HIDEOUT",
+    "WAKE_UP_CALL",
     "NOT_A_SNITCH",
     "UNSECURED_DEVICE",
 ]
