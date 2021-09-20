@@ -1,5 +1,5 @@
 {% set skills = load_data(path="data/skills.json") %}
-{% set skill = skills[id] %}
+{% set skill = skills["skills"][id] %}
 {% if link is defined and link == false %}
 '{{skill.title}}'
 {% else %}

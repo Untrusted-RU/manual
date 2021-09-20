@@ -1,5 +1,5 @@
 {% set classes = load_data(path="data/classes.json") %}
-{% set class = classes[id] %}
+{% set class = classes["classes"][id] %}
 {% if path %}
 {% set href = "/advanced-strategy/" ~ path %}
 {% else %}

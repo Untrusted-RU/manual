@@ -3,9 +3,22 @@
     "title": "classes.json",
     "description": "A schema for data/classes.json",
     "type": "object",
+    "required": [
+        "classes"
+    ],
     "properties": {
         "$schema": {
             "type": "string"
+        },
+        "classes": {
+            "type": "object",
+            "patternProperties": {
+                "^[A-Z][A-Z_]*$": {
+                    "$ref": "#/definitions/Class"
+                }
+            },
+            "minProperties": 1,
+            "additionalProperties": false
         }
     },
     "definitions": {
@@ -14,6 +27,9 @@
             "required": [
                 "title",
                 "icon_id",
+                "unique",
+                "guaranteed",
+                "faction",
                 "type",
                 "skills",
                 "description"
@@ -63,18 +79,35 @@
                     "minLength": 1
                 }
             },
-            "if": {
-                "properties": {
-                    "faction": {
-                        "const": "NEUTRAL"
+            "anyOf": [
+                {
+                    "properties": {
+                        "faction": {
+                            "const": "NEUTRAL"
+                        }
+                    },
+                    "required": [
+                        "win_condition"
+                    ]
+                },
+                {
+                    "properties": {
+                        "faction": {
+                            "const": "NETSEC"
+                        }
+                    },
+                    "required": [
+                        "hack_chance"
+                    ]
+                },
+                {
+                    "properties": {
+                        "faction": {
+                            "const": "AGENT"
+                        }
                     }
                 }
-            },
-            "then": {
-                "required": [
-                    "win_condition"
-                ]
-            }
+            ]
         },
         "ClassType": {
             "title": "Class type",
@@ -97,36 +130,27 @@
         },
         "HackChance": {
             "title": "Hack chance",
-            "type": "string",
-            "enum": [
-                "очень высокий",
-                "высокий",
-                "средний",
-                "низкий",
-                "очень низкий"
-            ]
-        },
-        "NeutralClass": {
-            "properties": {
-                "faction": {
-                    "const": "NEUTRAL"
-                },
-                "win_condition": {
+            "oneOf": [
+                {
                     "type": "string",
-                    "minLength": 1
+                    "enum": [
+                        "очень высокий",
+                        "высокий",
+                        "средний",
+                        "низкий",
+                        "очень низкий"
+                    ]
+                },
+                {
+                    "type": "boolean",
+                    "const": false
                 }
-            }
+            ]
         },
         "SkillID": {
             "title": "Skill ID",
             "type": "string",
             "pattern": "^[A-Z][A-Z0-9_]*$"
         }
-    },
-    "patternProperties": {
-        "^[A-Z][A-Z_]*$": {
-            "$ref": "#/definitions/Class"
-        }
-    },
-    "minProperties": 1
+    }
 }

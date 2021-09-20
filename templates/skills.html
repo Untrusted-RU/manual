@@ -4,7 +4,7 @@
 {% block content %}
 {{ super() }}
 {% set skills = load_data(path="data/skills.json") %}
-{% for skill_id, skill in skills %}
+{% for skill_id, skill in skills.skills %}
 <hr />
 <div style="float:left;width:60%;">
     <a name="{{ skill_id }}"></a>

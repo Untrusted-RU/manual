@@ -1,5 +1,5 @@
 {% set classes = load_data(path="data/classes.json") %}
-{% set class = classes[id] %}
+{% set class = classes["classes"][id] %}
 {% if link is defined and link == false %}
 {{class.title}}
 {% else %}

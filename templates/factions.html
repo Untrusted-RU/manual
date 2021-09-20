@@ -19,7 +19,7 @@
         <b>Играбельные классы:</b>
         {% set classes = load_data(path="data/classes.json") %}
         {% for class_id in faction.extra.members %}
-        {% set class = classes[class_id] %}
+        {% set class = classes["classes"][class_id] %}
         <br>
         <a href="/classes/#{{class_id}}">{{ class.title }} «</a>
         {% endfor %}

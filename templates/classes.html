@@ -5,7 +5,7 @@
 {{ super() }}
 {% set classes = load_data(path="data/classes.json") %}
 {% set skills = load_data(path="data/skills.json") %}
-{% for class_id, class in classes %}
+{% for class_id, class in classes["classes"] %}
 <div style="height:50px;clear:both;"></div>
 <a name="{{ class_id }}"></a>
 <hr />
@@ -44,7 +44,7 @@
     <p><b>Тип класса: {{ class.type }}</b></p>
     <p><b>Доступные навыки:</b></p>
     {% for skill_id in class.skills %}
-    {% set skill = skills[skill_id] %}
+    {% set skill = skills["skills"][skill_id] %}
     <div style="vertical-align:middle;margin-top:5px;">
         <a onclick="
             jQuery('.skilldetail').slideUp();
@@ -66,7 +66,7 @@
 </div>
 <div id="skillanchor-{{ class_id }}"></div>
 {% for skill_id in class.skills %}
-{% set skill = skills[skill_id] %}
+{% set skill = skills["skills"][skill_id] %}
 <div class="skilldetail" id="skill-{{ class_id }}-{{ skill_id }}" style="clear: both; display: none;"><br>
     <hr>
     <div style="float:left;width:60%;">
@@ -106,4 +106,3 @@
 
 
 {% endblock content %}
-
