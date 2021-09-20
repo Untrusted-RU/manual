@@ -4,7 +4,6 @@
 # changelog header
 header = """
 # Changelog
-
 All notable changes to this project will be documented in this file.\n
 """
 # template for the changelog body
@@ -17,9 +16,12 @@ body = """
 {% endif %}\
 {% for group, commits in commits | group_by(attribute="group") %}
     ### {{ group | upper_first }}
-    {% for commit in commits %}
-        - {{ commit.message | upper_first }}\
-    {% endfor %}
+    {% for group, commits in commits | group_by(attribute="scope") %}
+        #### {{ group | upper_first }}
+        {% for commit in commits %}
+            - {{ commit.message | upper_first }}\
+        {% endfor %}
+    {% endfor %}\
 {% endfor %}\n
 """
 # remove the leading and trailing whitespaces from the template
@@ -35,15 +37,15 @@ footer = """
 conventional_commits = true
 # regex for parsing and grouping commits
 commit_parsers = [
-    { message = "^feat*", group = "Features" },
-    { message = "^fix*", group = "Bug Fixes" },
-    { message = "^doc*", group = "Documentation" },
-    { message = "^perf*", group = "Performance" },
-    { message = "^refactor*", group = "Refactor" },
-    { message = "^style*", group = "Styling" },
-    { message = "^test*", group = "Testing" },
-    { message = "^chore\\(release\\): prepare for*", skip = true },
-    { message = "^chore*", group = "Miscellaneous Tasks" },
+    { message = "^feat", group = "Features" },
+    { message = "^fix", group = "Bug Fixes" },
+    { message = "^doc", group = "Documentation", default_scope = "unscoped" },
+    { message = "^perf", group = "Performance" },
+    { message = "^refactor", group = "Refactor" },
+    { message = "^style", group = "Styling" },
+    { message = "^test", group = "Testing" },
+    { message = "^chore\\(release\\): prepare for", skip = true },
+    { message = "^chore", group = "Miscellaneous Tasks" },
     { body = ".*security", group = "Security" },
 ]
 # filter out the commits that are not matched by commit parsers
