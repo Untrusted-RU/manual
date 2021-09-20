@@ -157,6 +157,7 @@ skills = [
     "DOWNLOAD_INTEL",
     "MEET_DISCUSS",
     "ASK_THE_RIGHT_QUESTION",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вам нравится математика и статистика. \
@@ -179,6 +180,7 @@ skills = [
     "DENIAL_OF_SERVICE",
     "MEET_DISCUSS",
     "NOT_A_SNITCH",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы не просто хороши во взломе компьютеров - \
@@ -202,6 +204,7 @@ skills = [
     "MOVE_HIDEOUT",
     "INSTALL_CCTV_SURVEILLANCE",
     "PERFORM_CCTV_SURVEILLANCE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вас нанял Лидер операции - вы должны следить, чтобы правоохранительные органы не мешали операции. \
@@ -223,6 +226,7 @@ skills = [
     "ESCORT",
     "DISORGANIZED_MURDER",
     "DIVERSION",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Иногда, судьба нуждается в пинке - буквально. \
@@ -246,6 +250,7 @@ skills = [
     "KEYLOGGER_RETRIEVE",
     "DUMPSTER_DIVE",
     "TARGET_KNOWLEDGE",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 У вас нет высокого уровня доступа в целевой организации, но ведь это лучше, чем никакого доступа, верно? \
@@ -262,7 +267,13 @@ guaranteed = false
 faction = "NETSEC"
 type = "Нападающий"
 hack_chance = "очень низкий"
-skills = ["HACK_NODE", "DOWNLOAD_INTEL", "MOVE_HIDEOUT", "DUMPSTER_DIVE"]
+skills = [
+    "HACK_NODE",
+    "DOWNLOAD_INTEL",
+    "MOVE_HIDEOUT",
+    "DUMPSTER_DIVE",
+    "PERSON_OF_INTEREST",
+]
 description = """\
 Вы никогда не учили ничего о хакинге, \
 и нанимали вас по другим причинам. \
@@ -284,6 +295,7 @@ skills = [
     "INVESTIGATE_NODE",
     "COVER_TRACKS",
     "REVIEW_CONNECTION_LOGS",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Хоть у вас и есть несколько трюков в рукаве для взлома компьютеров, \
@@ -308,6 +320,7 @@ skills = [
     "MOVE_HIDEOUT",
     "NOT_A_SNITCH",
     "BROADCAST",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы являетесь лидером операции NETSEC - ваша роль заключается в координации атак и ликвидации потенциальных угроз для вашей операции. \
@@ -350,6 +363,7 @@ skills = [
     "MOVE_HIDEOUT",
     "MISDIRECTION",
     "SPEARPHISH_PREPARATION",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Пусть вы и не так хороши, как Черношляпник, \
@@ -411,6 +425,7 @@ skills = [
     "STEAL_INTEL",
     "NOT_A_SNITCH",
     "AGENT_SCUM",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 Вы пользовались своей должностью в органах, \
@@ -498,6 +513,7 @@ skills = [
     "WIPE",
     "BLACKMAILED_INFORMER",
     "PREPARED_FOR_ANYTHING",
+    "PERSON_OF_INTEREST",
 ]
 description = """\
 NETSEC, наши соперники, даже не подозревают, что, \
