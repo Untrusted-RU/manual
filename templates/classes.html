@@ -3,8 +3,8 @@
 
 {% block content %}
 {{ super() }}
-{% set classes = load_data(path="data/classes.toml") %}
-{% set skills = load_data(path="data/skills.toml") %}
+{% set classes = load_data(path="data/classes.json") %}
+{% set skills = load_data(path="data/skills.json") %}
 {% for class_id, class in classes %}
 <div style="height:50px;clear:both;"></div>
 <a name="{{ class_id }}"></a>
@@ -106,3 +106,4 @@
 
 
 {% endblock content %}
+
