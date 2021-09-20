@@ -1,13 +1,8 @@
 name: Documentation
-
-on:
-  push:
-    tags:
-      - "v*"
-
+on: [push]
 jobs:
   changelog:
-    name: Create release
+    name: Generate changelog
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,17 +14,10 @@ jobs:
         uses: orhun/git-cliff-action@v1
         id: git-cliff
         with:
+          config: cliff.toml
           args: --verbose
-
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@latest
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Update manual to ${{ github.ref }}
-          body: |
-            ${{ steps.git-cliff.outputs.changelog }}
-          draft: false
-          prerelease: false
+          OUTPUT: CHANGELOG.md
+
+      - name: Print the changelog
+        run: cat "${{ steps.git-cliff.outputs.changelog }}"
