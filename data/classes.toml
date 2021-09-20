@@ -60,6 +60,7 @@ skills = [
     "SEARCH_FOR_KEYLOGGERS",
     "WIRETAP",
     "ADD_ROUTE",
+    "DISORGANIZED_MURDER",
     "TOPOLOGY_KNOWLEDGE",
 ]
 description = """\
