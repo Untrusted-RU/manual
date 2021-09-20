@@ -17,7 +17,7 @@ The following changes are experimental. They may or may not be rolled back/adjus
 - [x] "Misdirection" charges lowered from 2 to 1
 - [x] "Spearphisher" gains "Move Hideout"
 - [x] "Agent Leader" gains "Unskilled Attack"
-- [ ] "Offensive Mole" gains "Unskilled Attack"
+- [x] "Offensive Mole" gains "Unskilled Attack"
 - [ ] "Rival Hacker" gains "Unskilled AttacK"
 - [ ] "Computer Forensics Background" loses "Unskilled attack" from the spawn pool and gains "Harden" instead
 - [ ] "Field Agent" gains "Follow"
