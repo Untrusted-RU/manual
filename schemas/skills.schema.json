@@ -3,6 +3,11 @@
     "title": "skills.json",
     "description": "A schema for data/skills.json",
     "type": "object",
+    "properties": {
+        "$schema": {
+            "type": "string"
+        }
+    },
     "definitions": {
         "Skill": {
             "title": "Skill",

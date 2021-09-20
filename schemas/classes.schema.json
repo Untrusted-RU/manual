@@ -3,7 +3,11 @@
     "title": "classes.json",
     "description": "A schema for data/classes.json",
     "type": "object",
-    "x-taplo-info": {},
+    "properties": {
+        "$schema": {
+            "type": "string"
+        }
+    },
     "definitions": {
         "Class": {
             "title": "Class",

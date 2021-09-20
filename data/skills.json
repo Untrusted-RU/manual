@@ -1,4 +1,5 @@
 {
+    "$schema": "../schemas/skills.schema.json",
     "ADD_ROUTE": {
         "title": "Добавить соединение",
         "icon_id": 63,

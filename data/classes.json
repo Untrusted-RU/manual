@@ -1,4 +1,5 @@
 {
+    "$schema": "../schemas/classes.schema.json",
     "AGENT_LEADER": {
         "title": "Лидер AGENT",
         "icon_id": 15,
