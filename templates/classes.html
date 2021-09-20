@@ -21,6 +21,9 @@
         {% if class.guaranteed %}
         <p>Этот класс гарантированно участвует в каждой игре.</p>
         {% endif %}
+        {% if class.class_restriction %}
+        <p>{{ class.class_restriction | safe }}</p>
+        {% endif %}
         {% set faction_path = "factions/" ~ class.faction ~ ".md" | lower %}
         {% set faction = get_page(path=faction_path) %}
         <p><b>Фракция:</b> <a href="/factions/#{{ faction.extra.id }}">{{ faction.title }}</a></p>
@@ -103,4 +106,3 @@
 
 
 {% endblock content %}
-

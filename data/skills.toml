@@ -1113,7 +1113,7 @@ targeted_at = "сетевой узел"
 description = "Загрузить украденные данные на данный узел."
 
 [WAKE_UP_CALL]
-title = "Очистить узел"
+title = "Сигнал тревоги"
 icon_id = 89
 time = "Ночной"
 cooldown = 0
