@@ -7,6 +7,7 @@ faction = "AGENT"
 type = "Особый"
 hack_chance = "средний"
 skills = [
+    "UNSKILLED_ATTACK",
     "ALL_IN",
     "ROLLBACK",
     "COMPUTER_FORENSICS_BACKGROUND",
