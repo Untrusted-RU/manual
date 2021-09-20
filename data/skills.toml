@@ -699,6 +699,21 @@ description = """\
 что спасёт вас от попыток ареста, убийства и сделок.\
 """
 
+[MURDER_JOURNALIST]
+title = "Убить журналиста"
+icon_id = 90
+time = "Ночной"
+cooldown = 0
+visits = true
+occupies = false
+maximum_uses = 1
+rng = false
+targeted_at = "игрока"
+description = """\
+Собрать всю свою храбрость и убить журналиста. \
+Ваша семья не должна узнать, в какой передряге вы замешаны.\
+"""
+
 [NO_DIRT_ON_ME]
 title = "На меня грязи нет"
 icon_id = 34
