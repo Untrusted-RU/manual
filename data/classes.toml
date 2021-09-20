@@ -487,6 +487,7 @@ win_condition = """\
 """
 type = "Нападающий"
 skills = [
+    "UNSKILLED_ATTACK",
     "HACK_NODE",
     "HARDEN",
     "JAM_NETWORK",
