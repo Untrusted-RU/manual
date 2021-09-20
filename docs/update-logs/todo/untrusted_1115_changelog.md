@@ -7,7 +7,7 @@ New features
 - [ ] New passive skill "Blabbermouth" (Journalists will get two scoops from players with blabbermouth)
 - [x] New passive skill "Person of Interest" (Journalists will get one scoop as long as their target has "Person of Interest")
 - [x] New skill "Wake up Call" (Panicked Blabbermouth only)
-- [ ] New skill "Murder Journalist" (Panicked Blabbermouth only)
+- [x] New skill "Murder Journalist" (Panicked Blabbermouth only)
 
 Balance Changes
 
