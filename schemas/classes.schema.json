@@ -14,12 +14,10 @@
             "required": [
                 "title",
                 "icon_id",
-                "win_condition",
                 "type",
                 "skills",
                 "description"
             ],
-            "additionalProperties": false,
             "properties": {
                 "title": {
                     "type": "string",
@@ -41,7 +39,8 @@
                     "$ref": "#/definitions/Faction"
                 },
                 "win_condition": {
-                    "type": "string"
+                    "type": "string",
+                    "minLength": 1
                 },
                 "type": {
                     "$ref": "#/definitions/ClassType"
@@ -63,6 +62,18 @@
                     "type": "string",
                     "minLength": 1
                 }
+            },
+            "if": {
+                "properties": {
+                    "faction": {
+                        "const": "NEUTRAL"
+                    }
+                }
+            },
+            "then": {
+                "required": [
+                    "win_condition"
+                ]
             }
         },
         "ClassType": {
@@ -95,6 +106,17 @@
                 "очень низкий"
             ]
         },
+        "NeutralClass": {
+            "properties": {
+                "faction": {
+                    "const": "NEUTRAL"
+                },
+                "win_condition": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            }
+        },
         "SkillID": {
             "title": "Skill ID",
             "type": "string",
@@ -106,6 +128,5 @@
             "$ref": "#/definitions/Class"
         }
     },
-    "minProperties": 1,
-    "additionalProperties": false
+    "minProperties": 1
 }
